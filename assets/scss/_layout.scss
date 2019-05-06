@@ -23,11 +23,19 @@
     background-color: $primary;
     display: flex;
     align-items: center;
+    // justify-content: center;
     color: $white;
 }
 
 .foodProc-image {
     background-image: url('/images/foodProc.jpg');
     background-position: center;
+    background-attachment: fixed;
+}
+
+.figures {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
 }
 

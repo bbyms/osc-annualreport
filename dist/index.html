@@ -15,6 +15,8 @@
     <meta property="og:image"              content="" />
 
     <link rel="stylesheet" href="/css/styles.css">
+    <!-- Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--  
     Favicons
     =============================================
@@ -33,10 +35,13 @@
 <body>
   <main>
     <section class="section section-100 cover ">
-    <div class="ribbon">
+    <div class="ribbon" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out"
+    data-aos-mirror="true"
+    data-aos-once="false">
         <img src="images/wfp-logo-vertical-white-en.svg" alt="World Food Programme">
     </div>
-    <div class="cover-title">
+    <div class="cover-title" data-aos="fade" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+    data-aos-once="false">
         <div>
             <h1 class="text-uppercase">WFP Supply Chain Annual Report</h1>
             <h2 class="text-uppercase">2018 Annual Review</h2>
@@ -44,21 +49,26 @@
     </div>
 </section>
 
-    <section class="section section-100 mechanic">
-    <q>
-        I studied mechanics for three years before getting my first job in a car repair shop. After a few years, my boss
-        told me I could not get a raise because, as a woman, I could not be earning more than men. I resigned and found
-        a job with WFP, where I have been working since 2007. Since then I do feel treated as an equal and it is really
-        rewarding.
-    </q>
-    <p>
-        Chifundo CHANGADEYA, <br />
-        WFP’S CHIEF MECHANIC in Malawi, specializes in truck maintenance
-    </p>
+    <section class="section section-100 quote mechanic">
+   <div class="quote-content" data-aos="fade" data-aos-duration="1000"
+   data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true"
+    data-aos-once="false">
+        <q>
+                I studied mechanics for three years before getting my first job in a car repair shop. After a few years, my boss
+                told me I could not get a raise because, as a woman, I could not be earning more than men. I resigned and found
+                a job with WFP, where I have been working since 2007. Since then I do feel treated as an equal and it is really
+                rewarding.
+            </q>
+            <p>
+                Chifundo CHANGADEYA, <br />
+                WFP’S CHIEF MECHANIC in Malawi, <br />
+                specializes in truck maintenance
+            </p>
+   </div>
 </section>
 
     <section class="section section-20 divider">
-    <h1 class="text-uppercase"><strong>End-to-End Supply Chain:</strong> From Planning to Delivery</h1>
+    <h1 class="text-uppercase" data-aos="fade-right" data-aos-duration="1000"><strong>End-to-End Supply Chain:</strong> From Planning to Delivery</h1>
 </section>
 
     <section class="section section-100 unit-content">
@@ -108,7 +118,31 @@
         </div>
     </div>
 </section>
-<section class="section section-50 figures bg-blue"></section>
+<section class="section section-50 figures bg-blue">
+    <div data-aos="fade-up">
+        <span class="figure one">3.6M</span>
+        <p class="lead text-white">
+            MT procured in 2018 worldwide for a total value of
+        </p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="2000">
+        <span class="figure three">20%</span>
+        <p class="lead text-white">
+                increase compared to 2017
+        </p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="3000">
+        <span class="figure four">
+            79%
+        </span>
+        <p class="lead text-white">
+                of 2018 procurement was in developing countries
+        </p>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="1000">
+        <span class="figure two">US$1.6B</span>
+    </div>
+</section>
 <section class="section section-100 foodProc-image"></section>
     
   </main>
@@ -116,11 +150,23 @@
 
 </footer>
 
- <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
+<!-- Animation Library -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
+
 </html>

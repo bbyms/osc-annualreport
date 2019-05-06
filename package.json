@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "aos": "next",
     "autoprefixer": "^7.2.5",
     "bootstrap": "^4.0.0",
     "browser-sync": "^2.23.6",

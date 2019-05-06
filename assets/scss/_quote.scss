@@ -1,3 +1,29 @@
+.quote {
+    display: grid;
+    grid-template-columns: 30% auto;
+    padding: 0;
+
+    &-content {
+        background-color: rgba(0, 0, 0, .5);
+        padding: $grid-gutter-width;
+    }
+
+    q {
+        text-transform: uppercase;
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    p {
+        grid-row: 2;
+        color: $white;
+        margin-top: $grid-gutter-width;
+        text-transform: uppercase;
+    }
+}
+
 .mechanic {
     background-image: url('/images/mechanic.jpg');
 }
+

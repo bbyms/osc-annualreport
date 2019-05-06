@@ -1,0 +1,13 @@
+@keyframes figures {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opcity: 1;
+    }
+}
+
+.figure {
+    animation: figures;
+}
