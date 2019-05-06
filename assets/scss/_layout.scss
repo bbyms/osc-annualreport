@@ -1,0 +1,33 @@
+.section {
+    background-size: cover;
+    padding: $grid-gutter-width;
+
+    &-20 {
+        min-height: 20vh;
+    }
+
+    &-50 {
+        min-height: 50vh;
+    }
+
+    &-100 {
+        min-height: 100vh;
+    }
+}
+
+.bg-blue {
+    background-color: $blue;
+}
+
+.divider {
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+    color: $white;
+}
+
+.foodProc-image {
+    background-image: url('/images/foodProc.jpg');
+    background-position: center;
+}
+
