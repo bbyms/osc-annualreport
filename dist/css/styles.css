@@ -16190,6 +16190,14 @@ a.text-dark:hover, a.text-dark:focus {
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: 1fr 1fr; }
 
+.error {
+  background-color: #0A6EB4; }
+
+.error-illustration {
+  height: 300px;
+  display: block;
+  margin: auto; }
+
 .cover {
   background-image: url("/images/cover.jpg");
   background-attachment: fixed;
@@ -16270,19 +16278,3 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff;
   font-size: 4rem;
   font-weight: 700; }
-
-@-webkit-keyframes figures {
-  0% {
-    opacity: 0; }
-  100% {
-    opcity: 1; } }
-
-@keyframes figures {
-  0% {
-    opacity: 0; }
-  100% {
-    opcity: 1; } }
-
-.figure {
-  -webkit-animation: figures;
-          animation: figures; }
