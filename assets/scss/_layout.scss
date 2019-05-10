@@ -23,8 +23,26 @@
     background-color: $primary;
     display: flex;
     align-items: center;
-    // justify-content: center;
     color: $white;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: max-content auto;
+    grid-column-gap: $grid-gutter-width;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: $grid-gutter-width;
+}
+
+.figures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
 }
 
 .foodProc-image {
@@ -33,9 +51,9 @@
     background-attachment: fixed;
 }
 
-.figures {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
+.goods-image {
+    background-image: url('/images/goods.jpg');
+    background-position: center;
+    background-attachment: fixed;
 }
 

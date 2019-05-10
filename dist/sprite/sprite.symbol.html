@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+		<script src="https://rawgit.com/jonathantneal/svg4everybody/master/dist/svg4everybody.js"></script>
+		<script>svg4everybody();</script>
+		<title>SVG &lt;symbol&gt; sprite preview | svg-sprite</title>
+		<style>@charset "UTF-8";body{padding:0;margin:0;color:#666;background:#fafafa;font-family:Arial,Helvetica,sans-serif;font-size:1em;line-height:1.4}header{display:block;padding:3em 3em 2em 3em;background-color:#fff}header p{margin:2em 0 0 0}section{border-top:1px solid #eee;padding:2em 3em 0 3em}section ul{margin:0;padding:0}section li{display:inline;display:inline-block;background-color:#fff;position:relative;margin:0 2em 2em 0;vertical-align:top;border:1px solid #ccc;padding:1em 1em 3em 1em;cursor:default}.icon-box{margin:0;width:144px;height:144px;position:relative;background:#ccc url("data:image/gif;base64,R0lGODlhDAAMAIAAAMzMzP///yH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjEgNjQuMTQwOTQ5LCAyMDEwLzEyLzA3LTEwOjU3OjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1LjEgV2luZG93cyIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozQjk4OTI0MUY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozQjk4OTI0MkY5NTIxMUUyQkJDMEI5NEFEM0Y1QTYwQyI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjNCOTg5MjNGRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjNCOTg5MjQwRjk1MjExRTJCQkMwQjk0QUQzRjVBNjBDIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+Af/+/fz7+vn49/b19PPy8fDv7u3s6+rp6Ofm5eTj4uHg397d3Nva2djX1tXU09LR0M/OzczLysnIx8bFxMPCwcC/vr28u7q5uLe2tbSzsrGwr66trKuqqainpqWko6KhoJ+enZybmpmYl5aVlJOSkZCPjo2Mi4qJiIeGhYSDgoGAf359fHt6eXh3dnV0c3JxcG9ubWxramloZ2ZlZGNiYWBfXl1cW1pZWFdWVVRTUlFQT05NTEtKSUhHRkVEQ0JBQD8+PTw7Ojk4NzY1NDMyMTAvLi0sKyopKCcmJSQjIiEgHx4dHBsaGRgXFhUUExIREA8ODQwLCgkIBwYFBAMCAQAAIfkEAAAAAAAsAAAAAAwADAAAAhaEH6mHmmzcgzJAUG/NVGrfOZ8YLlABADs=") top left repeat;border:1px solid #ccc;display:table-cell;vertical-align:middle;text-align:center}.icon{display:inline;display:inline-block}h1{margin-top:0}h2{margin:0;padding:0;font-size:1em;font-weight:normal;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:absolute;left:1em;right:1em;bottom:1em}footer{display:block;margin:0;padding:0 3em 3em 3em}footer p{margin:0;font-size:.7em}footer a{color:#0f7595;margin-left:0}</style>
+		
+<!--
+	
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as inline SVG, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+
+-->
+
+<style type="text/css">
+	.svg-chart-dims { width: 80px; height: 80px; }
+	.svg-food-dims { width: 80px; height: 80px; }
+	.svg-procured-dims { width: 80px; height: 80px; }
+</style>
+<!--
+====================================================================================================
+-->
+
+	</head>
+	<body>
+	
+<!--
+	
+Inline <symbol> SVG sprite
+====================================================================================================
+This is an inlined version of the generated SVG sprite. The single images may be <use>d everywhere
+below within this document. Please see
+
+	https://github.com/jkphl/svg-sprite/blob/master/docs/configuration.md#defs--symbol-mode
+
+for further details on how to create this embeddable sprite variant.
+
+-->
+
+<svg width="0" height="0" style="position:absolute">
+		<symbol id="chart" viewBox="0 0 80 80" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><style>.ast0{clip-path:url(#aSVGID_2_)}.ast1{fill:#007bbb}</style><defs><path id="aSVGID_1_" d="M9.5 10.2h61v59.5h-61z"/></defs><clipPath id="aSVGID_2_"><use xlink:href="#aSVGID_1_" overflow="visible"/></clipPath><g id="aLayer_1-2" class="ast0"><path class="ast1" d="M34.7 21.7l11 10.7c.4.3.8.5 1.3.5s.9-.2 1.2-.5l16.6-16.1V24c.1 1 1 1.8 2 1.7.9-.1 1.6-.8 1.7-1.7V12c0-1-.9-1.8-1.9-1.8H54.4c-1 0-1.8.8-1.8 1.8s.8 1.8 1.8 1.8h7.8L47.1 28.6 36.1 18c-.8-.7-2-.7-2.8 0L10.1 40.7c-.7.7-.7 1.8-.1 2.5l.1.1c.7.7 1.9.7 2.6 0l22-21.6zM24.1 49.3H14c-1.4 0-2.6.8-2.6 1.9v16.7c0 1 1.1 1.9 2.6 1.9h10.2c1.4 0 2.6-.8 2.6-1.9V51.2c-.1-1-1.2-1.8-2.7-1.9M46 39.4H36c-1.4 0-2.6.8-2.6 1.8v26.6c0 1 1.1 1.8 2.6 1.8h10c1.4 0 2.6-.8 2.6-1.8V41.3c0-1-1.1-1.9-2.6-1.9m21.9-9.8H57.7c-1.4 0-2.6.8-2.6 1.8v36.5c0 1 1.2 1.8 2.6 1.8h10.2c1.4 0 2.6-.8 2.6-1.8V31.4c0-1-1.2-1.8-2.6-1.8"/></g></symbol>
+		<symbol id="food" viewBox="0 0 80 80" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><style>.bst0{clip-path:url(#bSVGID_2_)}.bst1{fill:#007bbb}</style><defs><path id="bSVGID_1_" d="M1.2 9.8h77.5v60.5H1.2z"/></defs><clipPath id="bSVGID_2_"><use xlink:href="#bSVGID_1_" overflow="visible"/></clipPath><g id="bLayer_1-2" class="bst0"><path class="bst1" d="M30.2 32.7c0 3.3-2.7 6-6 6H24V36c0-3.3 2.7-6 6-6H30.3v2.7zm0 10.1c0 3.3-2.7 6-6 6H24v-2.7c0-3.3 2.7-6 6.1-6h.2v2.7zm0 10.1c0 3.3-2.7 6-6 6H24v-2.7c0-3.3 2.7-6 6.1-6h.2v2.7zm-6.3 11c-.2 1.4-1.4 2.4-2.8 2.2-1.1-.1-2-1-2.2-2.2V62c0-.3.3-.6.6-.6h3.8c.3 0 .6.3.6.6v1.9zm-11.3-11v-2.8h.2c3.3 0 6 2.7 6 6v2.8h-.2c-3.3 0-6-2.7-6-6m0-12.8h.2c3.3 0 6 2.7 6.1 6v2.8h-.2c-3.3 0-6-2.7-6.1-6v-2.8zm0-10.1h.2c3.3 0 6 2.6 6 5.9v2.9h-.2c-3.3 0-6-2.7-6.1-6V30zm6.3-5.1c0-1.4 1.1-2.5 2.5-2.5s2.5 1.1 2.5 2.5v3.7c.2 1.4-.8 2.6-2.2 2.8-1.4.2-2.6-.8-2.8-2.2v-4.3zm17.6-6.3H6.2c-2.7 0-5 2.3-5 5v41.6c0 2.7 2.3 5 5 5h30.3c2.7 0 5-2.3 5-5V23.6c0-2.7-2.2-5-5-5M6.9 16.1h29c1.7 0 3.2-1.4 3.2-3.1S37.7 9.8 36 9.8H7c-1.7 0-3.1 1.4-3.1 3.2-.1 1.6 1.3 3.1 3 3.1"/><path class="bst1" d="M77.8 56.4H32.4c-.6 0-1 .4-1 1 0 7.1 5.7 12.8 12.8 12.8h21.7c7.1 0 12.8-5.7 12.8-12.8.1-.5-.4-1-.9-1M52 45.8l-2.5-.7c-2.6-.7-5.3.9-6 3.5l-.2.7 2.5.7c2.6.7 5.3-.9 6-3.5l.2-.7zm-.5 5.7l2.5.7c2.6.7 5.3-.9 6-3.5l.2-.6-2.5-.7c-2.6-.7-5.3.9-6 3.5l-.2.6zm8.1 2.2l2.5.7c2.6.7 5.3-.9 6-3.5l.2-.7-2.4-.7c-2.6-.7-5.3.9-6 3.5l-.3.7zm-9.3-11.2l2.5.7.2-.7c.7-2.6-.9-5.3-3.5-6l-2.5-.7-.2.7c-.7 2.5.9 5.2 3.5 6m8.1 2.1l2.5.7.2-.7c.7-2.6-.9-5.3-3.5-6l-2.5-.6-.2.6c-.6 2.7.9 5.3 3.5 6m8.1 2.2l2.4.7.2-.6c.7-2.6-.9-5.3-3.5-6l-2.4-.7-.2.7c-.6 2.5.9 5.2 3.5 5.9M76.7 51c.2-.7-.3-1.5-1-1.7l-5-1.3-.7 2.7 5 1.3c.8.2 1.5-.3 1.7-1m-39.4-6.2c-.7-.2-1.5.2-1.7 1s.2 1.5 1 1.7l3.6 1c.7.2 1.5-.2 1.8-.9s-.2-1.5-.9-1.8H41l-3.7-1zm2.2-8.1l3.6 1c.7.2 1.5-.2 1.8-.9s-.2-1.6-.9-1.8h-.1l-3.6-1c-.7-.2-1.5.2-1.7 1-.3.7.2 1.5.9 1.7m-5 4.4l9.9 2.6c.7.2 1.5-.2 1.7-1s-.2-1.5-1-1.7l-9.9-2.6c-.7-.2-1.5.2-1.8.9s.2 1.5 1.1 1.8c-.1 0 0 0 0 0"/></g></symbol>
+		<symbol id="procured" viewBox="0 0 80 80" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><style>.cst0{clip-path:url(#cSVGID_2_)}.cst1{fill:#007bbb}</style><defs><path id="cSVGID_1_" d="M0 13.7h80v52.6H0z"/></defs><clipPath id="cSVGID_2_"><use xlink:href="#cSVGID_1_" overflow="visible"/></clipPath><g id="cLayer_1-2" class="cst0"><path class="cst1" d="M19.8 56v1.5c-.1.9-.8 1.5-1.7 1.5-.8-.1-1.4-.7-1.4-1.4V56h-.5c-.9 0-1.5-.7-1.5-1.5 0-.9.7-1.5 1.5-1.5h3.1c.9 0 1.5-.7 1.5-1.5 0-.9-.7-1.5-1.5-1.5h-.9c-2.6.1-4.7-1.9-4.8-4.5-.1-2 1.2-3.9 3.1-4.5v-2c.1-.9.8-1.5 1.7-1.4.8.1 1.4.7 1.4 1.4v1.5h1.6c.9 0 1.5.7 1.5 1.5 0 .9-.7 1.5-1.5 1.5h-3.1c-.9 0-1.5.7-1.5 1.5 0 .9.7 1.5 1.5 1.5h.9c2.6 0 4.7 2 4.7 4.6.1 2.6-1.8 4.6-4.1 4.9m16.4-9.8l-8.1-16H9.4l-8.2 16C-1.1 51.6 0 57.8 4.2 62c2.7 2.8 6.5 4.4 10.4 4.4h8.3c8 0 14.5-6.4 14.5-14.4 0-2.1-.3-4-1.2-5.8M9.4 28.1h8.3L16 20.5c-.2-.9-1.1-1.6-2-1.6H8.3c-.6 0-1 .4-1 1v.2l2.1 8zm14.5 0h4.2L30.2 18c.1-.6-.3-1.1-.9-1.2H26c-1.1 0-2.1.9-2.1 2.1 0-1.1-.9-2.1-2.1-2.1h-3.1c-.6 0-1 .5-1 1v.2l2.1 10.1h4.1z"/><path class="cst1" d="M57.7 55.6H28.2c-.4 0-.6.3-.6.6 0 4.6 3.7 8.3 8.3 8.3H50c4.6 0 8.3-3.7 8.3-8.3 0-.3-.3-.6-.6-.6m-16.8-6.8l-1.6-.4c-1.7-.5-3.5.6-3.9 2.3l-.1.3 1.6.4c1.7.5 3.5-.5 3.9-2.2l.1-.4zm-.3 3.6l1.6.4c1.7.5 3.5-.5 3.9-2.3l.1-.4-1.6-.4c-1.7-.5-3.5.5-4 2.2v.5zm5.2 1.4l1.6.4c1.7.5 3.5-.5 3.9-2.3l.1-.4-1.6-.4c-1.7-.5-3.5.5-3.9 2.2l-.1.5zm-6-7.2l1.6.4.1-.4c.5-1.7-.6-3.4-2.3-3.9l-1.6-.4-.1.4c-.5 1.7.5 3.4 2.3 3.9m5.3 1.4l1.6.4.1-.4c.5-1.7-.6-3.4-2.3-3.9l-1.6-.4-.1.4c-.5 1.7.5 3.4 2.3 3.9-.1 0-.1 0 0 0m5.3 1.4l1.6.4.1-.4c.5-1.7-.5-3.4-2.2-3.9l-1.6-.4-.1.4c-.6 1.7.4 3.4 2.2 3.9-.1 0-.1 0 0 0m6.6 2.7c.1-.5-.1-1-.6-1.1l-3.2-.9-.5 1.8 3.2.9c.5.1.9-.2 1.1-.7 0 .1 0 0 0 0m-25.7-4c-.5-.1-1 .1-1.1.6v.1c-.1.5.1 1 .6 1.1h.1l2.4.6c.5.1 1-.1 1.1-.6.1-.5-.1-1-.6-1.1l-2.5-.7zm1.5-5.2l2.4.6c.5.1 1-.1 1.1-.6.1-.5-.1-1-.6-1.1l-2.4-.7c-.5-.1-1 .2-1.1.6-.2.5.1 1 .6 1.2m-3.3 2.8l6.5 1.7c.5.1 1-.1 1.1-.6v-.1c.1-.5-.1-1-.6-1.1L29.9 44c-.5-.1-1 .2-1.1.6s.2 1 .7 1.1m11.7-11.9c-2.8 0-5-2.3-5-5.1s2.3-5 5.1-5 5 2.3 5 5c0 2.9-2.3 5.1-5.1 5.1m7.7-6.1h-.5c-.2-1.2-.6-2.3-1.3-3.2l.3-.3c.4-.4.4-1.1 0-1.5-.4-.4-1.1-.4-1.5 0l-.3.3c-.9-.7-2.1-1.2-3.2-1.3v-.4c-.1-.6-.6-1-1.2-1-.5 0-.9.5-1 1v.4c-1.2.2-2.3.6-3.2 1.3l-.3-.3c-.4-.4-1.1-.4-1.5 0-.4.4-.4 1.1 0 1.5l.3.3c-.7.9-1.2 2-1.3 3.2h-.5c-.6 0-1.1.5-1.1 1.1 0 .6.5 1.1 1.1 1.1h.3c.2 1.2.6 2.3 1.3 3.2l-.3.3c-.4.4-.4 1.1 0 1.5.2.2.5.3.8.3.3 0 .6-.1.8-.3l.3-.3c.9.7 2.1 1.2 3.2 1.3v.5c.1.6.6 1 1.2 1 .5 0 .9-.5 1-1v-.5c1.2-.2 2.3-.6 3.2-1.3l.3.3c.2.2.5.3.8.3.3 0 .6-.1.8-.3.4-.4.4-1.1 0-1.5l-.3-.4c.7-.9 1.2-2 1.3-3.2h.5c.6 0 1.1-.5 1.1-1.1-.1-.5-.5-1-1.1-1m22.4 2c-2.8 0-5-2.3-5-5.1s2.3-5 5.1-5 5 2.3 5 5.1c-.1 2.7-2.3 5-5.1 5m7.6-6.1h-.5c-.2-1.2-.6-2.3-1.3-3.2l.3-.3c.4-.4.4-1.1 0-1.5-.4-.4-1.1-.4-1.5 0l-.3.3c-1-.7-2.1-1.1-3.2-1.3v-.5c-.1-.6-.6-1-1.2-1-.5 0-.9.5-1 1v.5c-1.2.2-2.3.6-3.2 1.3l-.3-.3c-.4-.5-1.1-.5-1.5-.1-.5.4-.5 1.1-.1 1.5l.1.1.3.3c-.7.9-1.2 2-1.3 3.2h-.5c-.6-.1-1.1.4-1.2 1-.1.6.4 1.1 1 1.2h.7c.2 1.2.6 2.2 1.3 3.2l-.3.3c-.4.4-.4 1.1 0 1.5.2.2.5.3.8.3.3 0 .6-.1.8-.3l.3-.3c.9.7 2.1 1.1 3.2 1.3v.5c.1.6.6 1 1.2 1 .5 0 .9-.5 1-1v-.5c1.2-.2 2.3-.6 3.2-1.3l.3.3c.2.2.5.3.8.3.3 0 .6-.1.8-.3.4-.4.4-1.1 0-1.5l-.5-.3c.7-.9 1.2-2 1.3-3.2h.5c.6.1 1.1-.4 1.2-1 .1-.6-.4-1.1-1-1.2h-.2M57.4 37.2c-2.1 0-3.8-1.7-3.8-3.8 0-2.1 1.7-3.8 3.8-3.8 2.1 0 3.8 1.7 3.8 3.8 0 2.1-1.7 3.8-3.8 3.8m5.8-4.6h-.3c-.1-.9-.5-1.7-1-2.4l.2-.2c.3-.3.3-.8 0-1.1-.3-.3-.8-.3-1.2 0l-.2.2c-.7-.5-1.5-.9-2.4-1v-.3c0-.5-.4-.8-.8-.8-.5 0-.8.4-.8.8v.3c-.9.1-1.7.5-2.4 1l-.3-.3c-.3-.3-.8-.3-1.2 0-.3.3-.3.8 0 1.1l.2.2c-.5.7-.9 1.5-1 2.4h-.3c-.4 0-.8.4-.8.8s.4.8.8.8h.3c.1.9.4 1.7.9 2.4l-.2.2c-.3.3-.3.8 0 1.1.3.3.8.3 1.2 0l.2-.2c.7.5 1.5.9 2.4 1v.3c0 .5.4.8.8.8.5 0 .8-.4.8-.8v-.3c.9-.1 1.7-.5 2.4-1l.2.2c.2.2.4.2.6.2.2 0 .4-.1.6-.2.3-.3.3-.8 0-1.1l-.2-.2c.5-.7.9-1.5 1-2.4h.3c.4 0 .8-.4.8-.8s-.2-.7-.6-.7M54.9 24c-2.1 0-3.8-1.7-3.8-3.8 0-2.1 1.7-3.8 3.8-3.8 2.1 0 3.8 1.7 3.8 3.8 0 2.1-1.7 3.8-3.8 3.8m5.7-4.6h-.3c-.1-.9-.5-1.7-1-2.4l.2-.2c.3-.3.3-.8 0-1.1-.3-.3-.8-.3-1.2 0l-.2.2c-.7-.5-1.5-.9-2.4-1v-.3c0-.5-.4-.8-.8-.8s-.8.4-.8.8v.3c-.9.1-1.7.5-2.4 1l-.2-.2c-.3-.3-.8-.3-1.2 0-.3.3-.3.8 0 1.1l.2.2c-.5.7-.9 1.5-1 2.4h-.3c-.4 0-.8.4-.8.8s.4.8.8.8h.3c.1.9.5 1.7 1 2.4l-.2.2c-.3.3-.3.8 0 1.1.2.2.4.2.6.2.2 0 .4-.1.6-.2l.2-.2c.7.5 1.5.9 2.4 1v.3c0 .5.4.8.8.8s.8-.4.8-.8v-.4c.9-.1 1.7-.5 2.4-1l.2.2c.2.2.4.2.6.2.2 0 .4-.1.6-.2.3-.3.3-.8 0-1.1l-.2-.2c.5-.7.9-1.5 1-2.4h.3c.4 0 .8-.4.8-.8.1-.3-.3-.7-.8-.7"/></g></symbol>
+</svg>
+
+<!--
+====================================================================================================
+-->
+		
+		<header>
+			<h1>SVG <code>&lt;symbol&gt;</code> sprite preview</h1>
+			<p>This preview features two methods of using the generated sprite in conjunction with inline SVG. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+			<ul>
+				<li>Your browser has to <a href="http://caniuse.com/#feat=svg-html5" target="_blank">support inline SVG</a> for these techniques to work.</li>
+				<li>The embedded sprite (A) slightly differs from the generated external one. Please <a href="https://github.com/jkphl/svg-sprite/blob/master/docs/configuration.md#defs--symbol-mode" target="_blank">see the documentation</a> for details on how to create such an embeddable sprite.</li>
+				<li>Internet Explorer up to version 11 doesn't support external sprites for use with inline SVG. For IE 9-11, you may polyfill this functionality with <a href="https://github.com/jonathantneal/svg4everybody" target="_blank">SVG for Everybody</a>.</li>
+			</ul>
+		</header>
+		<section>
+
+<!--
+	
+A) Inline SVG with embedded sprite
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) and are extracted out of the inline sprite
+embedded above. They may be styled via CSS.
+
+-->
+
+			<h3>A) Inline SVG with embedded sprite</h3>
+			<ul>
+
+				<li title="chart">
+					<div class="icon-box">
+						
+						<!-- chart -->
+						<svg class="svg-chart-dims">
+							<use xlink:href="#chart"></use>
+						</svg>
+						
+					</div>
+					<h2>chart</h2>
+				</li>
+				<li title="food">
+					<div class="icon-box">
+						
+						<!-- food -->
+						<svg class="svg-food-dims">
+							<use xlink:href="#food"></use>
+						</svg>
+						
+					</div>
+					<h2>food</h2>
+				</li>
+				<li title="procured">
+					<div class="icon-box">
+						
+						<!-- procured -->
+						<svg class="svg-procured-dims">
+							<use xlink:href="#procured"></use>
+						</svg>
+						
+					</div>
+					<h2>procured</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<section>
+
+<!--
+	
+B) Inline SVG with external sprite (IE 9-11 with polyfill only)
+====================================================================================================
+These SVG images make use of an URL + fragment identifiers (IDs) and refer to the regular external
+SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
+
+-->
+
+			<h3>B) Inline SVG with external sprite (IE 9-11 with polyfill only)</h3>
+			<ul>
+				
+				<li title="chart">
+					<div class="icon-box">
+						
+						<!-- chart -->
+						<svg class="svg-chart-dims">
+							<use xlink:href="sprite.svg#chart"></use>
+						</svg>
+						
+					</div>
+					<h2>chart</h2>
+				</li>
+				<li title="food">
+					<div class="icon-box">
+						
+						<!-- food -->
+						<svg class="svg-food-dims">
+							<use xlink:href="sprite.svg#food"></use>
+						</svg>
+						
+					</div>
+					<h2>food</h2>
+				</li>
+				<li title="procured">
+					<div class="icon-box">
+						
+						<!-- procured -->
+						<svg class="svg-procured-dims">
+							<use xlink:href="sprite.svg#procured"></use>
+						</svg>
+						
+					</div>
+					<h2>procured</h2>
+				</li>
+			</ul>
+
+<!--
+====================================================================================================
+-->
+
+		</section>
+		<footer>
+			<p>Generated at Fri, 10 May 2019 10:08:20 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+		</footer>
+	</body>
+</html>

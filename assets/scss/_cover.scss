@@ -9,19 +9,23 @@
     padding: $grid-gutter-width;
     grid-template-rows: 1fr auto;
 
-    h1,
-    h2 {
-        font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    }
+    // h1,
+    // h2 {
+    //     font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    // }
 
     h1 {
-        font-weight: 700;
-        font-size: 3rem;
+        // font-weight: 700;
+        font-size: 4rem;
+        // text-align: center;
+        background-color: $primary;
+        padding: $grid-gutter-width / 2;
+        display: inline-block;
     }
 
     h2 {
         font-size: 2.5rem;
-    }
+    }   
 
     .ribbon {
         background-color: $primary;
@@ -34,9 +38,10 @@
     }
 
     &-title {
-        mix-blend-mode: overlay;
+        // mix-blend-mode: overlay;
         display: flex;
-        color: $black;
-        padding: $grid-gutter-width; 
+        align-items: flex-end;
+        justify-content: end;
+        color: $white;
     }
 }
