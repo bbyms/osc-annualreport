@@ -16255,7 +16255,7 @@ a.text-dark:hover, a.text-dark:focus {
             align-items: flex-end;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
     color: #fff; }
 
 .quote {
