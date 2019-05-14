@@ -16207,6 +16207,11 @@ a.text-dark:hover, a.text-dark:focus {
   background-position: center;
   background-attachment: fixed; }
 
+.planning-image {
+  background-image: url("/images/planning.jpg");
+  background-position: center;
+  background-attachment: fixed; }
+
 .error {
   background-color: #0A6EB4; }
 
@@ -16265,16 +16270,18 @@ a.text-dark:hover, a.text-dark:focus {
   .quote-content {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 30px; }
-  .quote q {
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 700; }
-  .quote p {
-    grid-row: 2;
-    color: #fff;
-    margin-top: 30px;
-    text-transform: uppercase; }
+
+.quote-text q {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700; }
+
+.quote-text p {
+  grid-row: 2;
+  color: #fff;
+  margin-top: 30px;
+  text-transform: uppercase; }
 
 .mechanic {
   background-image: url("/images/mechanic.jpg"); }

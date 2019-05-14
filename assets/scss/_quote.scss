@@ -7,7 +7,9 @@
         background-color: rgba(0, 0, 0, .5);
         padding: $grid-gutter-width;
     }
+}
 
+.quote-text {
     q {
         text-transform: uppercase;
         color: $white;
