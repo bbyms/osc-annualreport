@@ -15,9 +15,7 @@
     // }
 
     h1 {
-        // font-weight: 700;
-        font-size: 4rem;
-        // text-align: center;
+        font-size: 3rem;
         background-color: $primary;
         padding: $grid-gutter-width / 2;
         display: inline-block;
@@ -41,7 +39,7 @@
         // mix-blend-mode: overlay;
         display: flex;
         align-items: flex-end;
-        justify-content: end;
+        justify-content: flex-end;
         color: $white;
     }
 }

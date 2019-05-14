@@ -16226,7 +16226,7 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 30px;
   grid-template-rows: 1fr auto; }
   .cover h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     background-color: #0A6EB4;
     padding: 15px;
     display: inline-block; }
@@ -16255,7 +16255,7 @@ a.text-dark:hover, a.text-dark:focus {
             align-items: flex-end;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: end;
+            justify-content: flex-end;
     color: #fff; }
 
 .quote {
