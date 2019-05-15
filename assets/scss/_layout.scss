@@ -15,16 +15,14 @@
     }
 }
 
-.bg-blue {
-    background-color: $blue;
-}
-
 .divider {
     background-color: $primary;
     display: flex;
     align-items: center;
     color: $white;
 }
+
+// Grids----------------------------------------
 
 .grid-2 {
     display: grid;
@@ -45,21 +43,8 @@
     grid-template-rows: repeat(2, auto);
 }
 
-.foodProc-image {
-    background-image: url('/images/foodProc.jpg');
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.goods-image {
-    background-image: url('/images/goods.jpg');
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.planning-image {
-    background-image: url('/images/planning.jpg');
-    background-position: center;
-    background-attachment: fixed;
+// Media Item -----------------------------------
+.media {
+    margin: $grid-gutter-width 0;
 }
 

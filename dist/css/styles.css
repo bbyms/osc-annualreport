@@ -16167,9 +16167,6 @@ a.text-dark:hover, a.text-dark:focus {
   .section-100 {
     min-height: 100vh; }
 
-.bg-blue {
-  background-color: #009edd; }
-
 .divider {
   background-color: #0A6EB4;
   display: -webkit-box;
@@ -16197,20 +16194,8 @@ a.text-dark:hover, a.text-dark:focus {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto); }
 
-.foodProc-image {
-  background-image: url("/images/foodProc.jpg");
-  background-position: center;
-  background-attachment: fixed; }
-
-.goods-image {
-  background-image: url("/images/goods.jpg");
-  background-position: center;
-  background-attachment: fixed; }
-
-.planning-image {
-  background-image: url("/images/planning.jpg");
-  background-position: center;
-  background-attachment: fixed; }
+.media {
+  margin: 30px 0; }
 
 .error {
   background-color: #0A6EB4; }
@@ -16219,6 +16204,44 @@ a.text-dark:hover, a.text-dark:focus {
   height: 300px;
   display: block;
   margin: auto; }
+
+.unit-title {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.unit-subtitle {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.lead {
+  color: #000; }
+  .lead strong {
+    font-weight: 700; }
+
+.figure {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700; }
+
+.figure-icon {
+  fill: #0A6EB4;
+  height: 100px;
+  width: 100px;
+  display: block; }
+
+.media-icon {
+  fill: #fff;
+  height: 50px;
+  width: 50px; }
+
+.icon-lg {
+  height: 120px;
+  width: 120px; }
+
+.bg-blue {
+  background-color: #009edd; }
 
 .cover {
   background-image: url("/images/cover.jpg");
@@ -16286,32 +16309,17 @@ a.text-dark:hover, a.text-dark:focus {
 .mechanic {
   background-image: url("/images/mechanic.jpg"); }
 
-.unit-title {
-  color: #000;
-  text-transform: uppercase;
-  font-weight: 700; }
+.foodProc-image {
+  background-image: url("/images/foodProc.jpg");
+  background-position: center;
+  background-attachment: fixed; }
 
-.unit-subtitle {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 700; }
+.goods-image {
+  background-image: url("/images/goods.jpg");
+  background-position: center;
+  background-attachment: fixed; }
 
-.lead {
-  color: #000; }
-  .lead strong {
-    font-weight: 700; }
-
-.figure {
-  color: #fff;
-  font-size: 4rem;
-  font-weight: 700; }
-
-.figure-icon {
-  fill: #0A6EB4;
-  height: 100px;
-  width: 100px;
-  display: block; }
-
-.icon-lg {
-  height: 120px;
-  width: 120px; }
+.planning-image {
+  background-image: url("/images/planning.jpg");
+  background-position: center;
+  background-attachment: fixed; }
