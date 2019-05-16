@@ -26,21 +26,31 @@
 
 .grid-2 {
     display: grid;
-    grid-template-columns: max-content auto;
+    grid-template-columns: 1fr 1fr;
     grid-column-gap: $grid-gutter-width;
 }
 
 .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-column-gap: $grid-gutter-width;
+    @include media-breakpoint-up(md) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: $grid-gutter-width;
+    }
 }
 
 .figures {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
+    @include media-breakpoint-up(md) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: max-content auto;
+        grid-column-gap: $grid-gutter-width;
+    }
 }
 
 // Media Item -----------------------------------
