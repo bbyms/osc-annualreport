@@ -25,9 +25,11 @@
 // Grids----------------------------------------
 
 .grid-2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: $grid-gutter-width;
+    @include media-breakpoint-up(md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: $grid-gutter-width;
+    }
 }
 
 .grid-3 {

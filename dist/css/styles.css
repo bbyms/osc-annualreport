@@ -16177,10 +16177,11 @@ a.text-dark:hover, a.text-dark:focus {
           align-items: center;
   color: #fff; }
 
-.grid-2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-column-gap: 30px; }
+@media (min-width: 768px) {
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px; } }
 
 @media (min-width: 768px) {
   .grid-3 {
