@@ -17,3 +17,35 @@
     background-position: center;
     background-attachment: fixed;
 }
+
+.shipping-image {
+    background-image: url('/images/shipping.jpg');
+    background-position: center;
+}
+
+.aviation-image {
+    background-image: url('/images/aviation.jpg');
+    background-position: 0 -100px;
+}
+
+.cbt-image {
+    background-image: url('/images/cbt.jpg');
+    background-position: top;
+    background-attachment: fixed;
+}
+
+.bilateral-image {
+    background-image: url('/images/bilateral.jpg');
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.unhas-image {
+    background-image: url('/images/unhas.jpg');
+    background-position: center;
+}
+
+.logistics-image {
+    background-image: url('/images/logistics.jpg');
+    background-position: center;
+}

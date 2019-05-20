@@ -16233,6 +16233,12 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 4rem;
   font-weight: 700; }
 
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff; }
+
 .figure-icon {
   fill: #0A6EB4;
   height: 100px;
@@ -16257,6 +16263,9 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bg-blue {
   background-color: #009edd; }
+
+.bg-red {
+  background-color: #dc3545; }
 
 .cover {
   background-image: url("/images/cover.jpg");
@@ -16340,3 +16349,29 @@ a.text-dark:hover, a.text-dark:focus {
   background-image: url("/images/planning.jpg");
   background-position: center;
   background-attachment: fixed; }
+
+.shipping-image {
+  background-image: url("/images/shipping.jpg");
+  background-position: center; }
+
+.aviation-image {
+  background-image: url("/images/aviation.jpg");
+  background-position: 0 -100px; }
+
+.cbt-image {
+  background-image: url("/images/cbt.jpg");
+  background-position: top;
+  background-attachment: fixed; }
+
+.bilateral-image {
+  background-image: url("/images/bilateral.jpg");
+  background-position: center;
+  background-attachment: fixed; }
+
+.unhas-image {
+  background-image: url("/images/unhas.jpg");
+  background-position: center; }
+
+.logistics-image {
+  background-image: url("/images/logistics.jpg");
+  background-position: center; }
