@@ -23,5 +23,43 @@
 
 .mechanic {
     background-image: url('/images/mechanic.jpg');
+    background-size: cover;
 }
+
+.community {
+    background-image: url('/images/community.jpg');
+    background-size: cover;
+}
+
+.stanley {
+    background-image: url('/images/driver.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.alia {
+    background-image: url('/images/alia.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.donor {
+    background-image: url('/images/donors.jpg');
+    background-size: cover;
+    background-position: center;
+
+    h3 {
+        opacity: .5;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+}
+
+.end {
+    background-image: url('/images/end.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
 

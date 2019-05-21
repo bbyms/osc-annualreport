@@ -16238,6 +16238,11 @@ a.text-dark:hover, a.text-dark:focus {
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
+  text-transform: uppercase; }
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
   text-transform: uppercase;
   border-bottom: 1px solid #fff; }
 
@@ -16274,6 +16279,9 @@ h3 {
 
 .bg-red {
   background-color: #dc3545; }
+
+.bg-gray-dark {
+  background-color: #292b33; }
 
 .cover {
   background-image: url("/images/cover.jpg");
@@ -16335,7 +16343,37 @@ h3 {
   text-transform: uppercase; }
 
 .mechanic {
-  background-image: url("/images/mechanic.jpg"); }
+  background-image: url("/images/mechanic.jpg");
+  background-size: cover; }
+
+.community {
+  background-image: url("/images/community.jpg");
+  background-size: cover; }
+
+.stanley {
+  background-image: url("/images/driver.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.alia {
+  background-image: url("/images/alia.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.donor {
+  background-image: url("/images/donors.jpg");
+  background-size: cover;
+  background-position: center; }
+  .donor h3 {
+    opacity: .5;
+    font-weight: 300;
+    line-height: 1.6; }
+
+.end {
+  background-image: url("/images/end.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
 
 .foodProc-image {
   background-image: url("/images/foodProc.jpg");
@@ -16372,8 +16410,13 @@ h3 {
 
 .unhas-image {
   background-image: url("/images/unhas.jpg");
-  background-position: center; }
+  background-position: center;
+  background-size: cover; }
 
 .logistics-image {
   background-image: url("/images/logistics.jpg");
+  background-position: center; }
+
+.map-image {
+  background-image: url("/images/map.svg");
   background-position: center; }

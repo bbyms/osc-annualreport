@@ -43,9 +43,15 @@
 .unhas-image {
     background-image: url('/images/unhas.jpg');
     background-position: center;
+    background-size: cover;
 }
 
 .logistics-image {
     background-image: url('/images/logistics.jpg');
+    background-position: center;
+}
+
+.map-image {
+    background-image: url('/images/map.svg');
     background-position: center;
 }
