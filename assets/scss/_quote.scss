@@ -1,14 +1,7 @@
 .quote {
-    padding: 0;
-
     &-content {
         background-color: rgba(0, 0, 0, .5);
         padding: $grid-gutter-width;
-    }
-
-    @include media-breakpoint-up(md) {
-        display: grid;
-        grid-template-columns: 30% auto;
     }
 }
 
