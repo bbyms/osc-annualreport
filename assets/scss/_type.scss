@@ -36,3 +36,19 @@ h4 {
     text-transform: uppercase;
     border-bottom: 1px solid $white;
 }
+
+// Alia -----------------------------------
+.title {
+    font-size: 10rem;
+    font-weight: 900;
+    letter-spacing: 3rem;
+}
+
+.name {
+    font-size: 4rem;
+    background-color: $primary;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 900;
+    display: inline-block;
+}

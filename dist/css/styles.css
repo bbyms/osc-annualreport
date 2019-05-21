@@ -16158,8 +16158,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 .section {
-  background-size: cover;
-  padding: 3rem; }
+  background-size: cover; }
   .section-20 {
     min-height: 20vh; }
   .section-50 {
@@ -16246,6 +16245,19 @@ h4 {
   text-transform: uppercase;
   border-bottom: 1px solid #fff; }
 
+.title {
+  font-size: 10rem;
+  font-weight: 900;
+  letter-spacing: 3rem; }
+
+.name {
+  font-size: 4rem;
+  background-color: #0A6EB4;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 900;
+  display: inline-block; }
+
 .figure-icon {
   fill: #0A6EB4;
   height: 100px;
@@ -16267,6 +16279,9 @@ h4 {
 
 .fill-green {
   fill: #8AD220; }
+
+.fill-blue {
+  fill: #0A6EB4; }
 
 .fill-white {
   fill: #fff; }
@@ -16358,7 +16373,7 @@ h4 {
 .alia {
   background-image: url("/images/alia.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: top; }
 
 .donor {
   background-image: url("/images/donors.jpg");
