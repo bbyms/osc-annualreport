@@ -1,54 +1,58 @@
 .unit-title {
-    color: $black;
-    text-transform: uppercase;
-    font-weight: 700;
+  color: $black;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .unit-subtitle {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .lead {
-    color: $black;
+  color: $black;
 
-    strong {
-        font-weight: 700;
-    }
+  strong {
+    font-weight: 700;
+  }
 }
 
 .figure {
-    color: $white;
-    font-size: 4rem;
-    font-weight: 700;
+  color: $white;
+  font-size: 4rem;
+  font-weight: 700;
 }
 
 h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h4 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-bottom: 1px solid $white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid $white;
 }
 
 // Alia -----------------------------------
 .title {
+  font-size: 7rem;
+  font-weight: 900;
+  letter-spacing: 3rem;
+
+  @include media-breakpoint-up(lg) {
     font-size: 10rem;
-    font-weight: 900;
-    letter-spacing: 3rem;
+  }
 }
 
 .name {
-    font-size: 4rem;
-    background-color: $primary;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-weight: 900;
-    display: inline-block;
+  font-size: 4rem;
+  background-color: $primary;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-weight: 900;
+  display: inline-block;
 }

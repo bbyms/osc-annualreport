@@ -1,0 +1,9 @@
+.card-dashed {
+  background-color: transparent;
+  border: 1px dashed $white;
+  margin-bottom: $grid-gutter-width;
+
+  .figure {
+    font-size: 2.5rem;
+  }
+}

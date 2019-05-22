@@ -16201,6 +16201,36 @@ a.text-dark:hover, a.text-dark:focus {
   grid-template-columns: max-content auto;
   grid-column-gap: 30px; }
 
+.process-grid {
+  border: 1px solid #fff;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-top: 90px;
+  position: relative;
+  padding: 30px;
+  padding-bottom: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); }
+  @media (min-width: 768px) {
+    .process-grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(auto, 8);
+      grid-template-rows: auto auto auto;
+      grid-column-gap: 5px;
+      grid-row-gap: 10px; } }
+  .process-grid h4 {
+    display: inline-block;
+    left: 30px;
+    top: -22px;
+    position: absolute;
+    padding: 5px 10px; }
+  .process-grid img {
+    grid-row: 2;
+    grid-column: 1 / 9; }
+  .process-grid div {
+    grid-row: 3;
+    text-align: center; }
+
 .media {
   margin: 30px 0; }
   .media p {
@@ -16246,9 +16276,12 @@ h4 {
   border-bottom: 1px solid #fff; }
 
 .title {
-  font-size: 10rem;
+  font-size: 7rem;
   font-weight: 900;
   letter-spacing: 3rem; }
+  @media (min-width: 992px) {
+    .title {
+      font-size: 10rem; } }
 
 .name {
   font-size: 4rem;
@@ -16297,6 +16330,25 @@ h4 {
 
 .bg-gray-dark {
   background-color: #292b33; }
+
+.text-red {
+  color: #dc3545; }
+
+.text-black {
+  color: #000; }
+
+.text-blue {
+  color: #009edd; }
+
+.text-green {
+  color: #8AD220; }
+
+.card-dashed {
+  background-color: transparent;
+  border: 1px dashed #fff;
+  margin-bottom: 30px; }
+  .card-dashed .figure {
+    font-size: 2.5rem; }
 
 .cover {
   background-image: url("/images/cover.jpg");
@@ -16380,15 +16432,25 @@ h4 {
   background-size: cover;
   background-position: center; }
   .donor h3 {
-    opacity: .5;
     font-weight: 300;
-    line-height: 1.6; }
+    line-height: 1.6;
+    color: #adb5bd; }
+    .donor h3 strong {
+      color: #fff; }
 
 .end {
   background-image: url("/images/end.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
+
+.yemen {
+  background-image: url("/images/yemen.png");
+  background-size: cover;
+  background-position: top left; }
+
+.elements {
+  background-color: #39474f; }
 
 .foodProc-image {
   background-image: url("/images/foodProc.jpg");

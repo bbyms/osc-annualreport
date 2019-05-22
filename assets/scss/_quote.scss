@@ -1,65 +1,79 @@
 .quote {
-    &-content {
-        background-color: rgba(0, 0, 0, .5);
-        padding: $grid-gutter-width;
-    }
+  &-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: $grid-gutter-width;
+  }
 }
 
 .quote-text {
-    q {
-        text-transform: uppercase;
-        color: $white;
-        font-size: 1.5rem;
-        font-weight: 700;
-    }
+  q {
+    text-transform: uppercase;
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
 
-    p {
-        grid-row: 2;
-        color: $white;
-        margin-top: $grid-gutter-width;
-        text-transform: uppercase;
-    }
+  p {
+    grid-row: 2;
+    color: $white;
+    margin-top: $grid-gutter-width;
+    text-transform: uppercase;
+  }
 }
 
 .mechanic {
-    background-image: url('/images/mechanic.jpg');
-    background-size: cover;
+  background-image: url("/images/mechanic.jpg");
+  background-size: cover;
 }
 
 .community {
-    background-image: url('/images/community.jpg');
-    background-size: cover;
+  background-image: url("/images/community.jpg");
+  background-size: cover;
 }
 
 .stanley {
-    background-image: url('/images/driver.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url("/images/driver.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .alia {
-    background-image: url('/images/alia.jpg');
-    background-size: cover;
-    background-position: top;
+  background-image: url("/images/alia.jpg");
+  background-size: cover;
+  background-position: top;
 }
 
 .donor {
-    background-image: url('/images/donors.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url("/images/donors.jpg");
+  background-size: cover;
+  background-position: center;
 
-    h3 {
-        opacity: .5;
-        font-weight: 300;
-        line-height: 1.6;
+  h3 {
+    // opacity: 0.5;
+    font-weight: 300;
+    line-height: 1.6;
+    color: $gray-500;
+
+    strong {
+      color: $white;
     }
+  }
 }
 
 .end {
-    background-image: url('/images/end.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-image: url("/images/end.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
+.yemen {
+	background-image: url("/images/yemen.png");
+	background-size: cover;
+	background-position: top left;
+  }
+
+.elements {
+	background-color: #39474f;
+}
 

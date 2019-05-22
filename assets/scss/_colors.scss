@@ -1,11 +1,27 @@
 .bg-blue {
-    background-color: $blue;
+  background-color: $blue;
 }
 
 .bg-red {
-    background-color: $red;
+  background-color: $red;
 }
 
 .bg-gray-dark {
-    background-color: $gray-dark;
+  background-color: $gray-dark;
+}
+
+.text-red {
+  color: $red;
+}
+
+.text-black {
+	color: $black;
+}
+
+.text-blue {
+	color: $blue;
+}
+
+.text-green {
+	color: $green;
 }
