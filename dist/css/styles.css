@@ -16291,6 +16291,12 @@ h4 {
   font-weight: 900;
   display: inline-block; }
 
+.cbt-title {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
 .figure-icon {
   fill: #0A6EB4;
   height: 100px;

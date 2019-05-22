@@ -56,3 +56,11 @@ h4 {
   font-weight: 900;
   display: inline-block;
 }
+
+// CBT -------------------------------------
+.cbt-title {
+	border-top: 1px solid $white;
+	border-bottom: 1px solid $white;
+	padding-top: $grid-gutter-width / 2;
+	padding-bottom: $grid-gutter-width / 2;
+}
