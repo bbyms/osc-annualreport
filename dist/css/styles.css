@@ -16232,24 +16232,21 @@ a.text-dark:hover, a.text-dark:focus {
     text-align: center; }
 
 .unhrd-grid {
-  display: grid; }
-  @media (min-width: 768px) {
-    .unhrd-grid {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(5, auto);
-      padding: 3rem;
-      grid-column-gap: 30px; } }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  padding: 3rem;
+  grid-column-gap: 30px; }
   .unhrd-grid .lead {
     margin-bottom: 0; }
 
 .storage-grid {
-  display: grid; }
-  @media (min-width: 768px) {
-    .storage-grid {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(4, -webkit-min-content) auto;
-      grid-template-rows: repeat(4, min-content) auto;
-      padding: 3rem; } }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, -webkit-min-content) auto;
+  grid-template-rows: repeat(4, min-content) auto;
+  grid-column-gap: 30px;
+  padding: 3rem; }
   .storage-grid .lead {
     margin-bottom: 0; }
 
@@ -16349,14 +16346,23 @@ h4 {
 .fill-blue {
   fill: #0A6EB4; }
 
+.fill-light-blue {
+  fill: #009edd; }
+
 .fill-white {
   fill: #fff; }
+
+.fill-dark {
+  fill: #19486a; }
 
 .fill-red {
   fill: #e78891; }
 
 .bg-blue {
   background-color: #009edd; }
+
+.bg-dark {
+  background-color: #19486a; }
 
 .bg-red {
   background-color: #dc3545; }
@@ -16375,6 +16381,9 @@ h4 {
 
 .text-green {
   color: #8AD220; }
+
+.text-dark {
+  color: #19486a; }
 
 .card-dashed {
   background-color: transparent;
@@ -16484,6 +16493,15 @@ h4 {
 
 .elements {
   background-color: #39474f; }
+
+.trucks {
+  background-image: url("/images/trucks.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.border-dashed {
+  border-top: 1px dashed #fff; }
 
 .foodProc-image {
   background-image: url("/images/foodProc.jpg");

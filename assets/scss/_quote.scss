@@ -78,3 +78,13 @@
 	background-color: #39474f;
 }
 
+.trucks {
+	background-image: url('/images/trucks.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.border-dashed {
+	border-top: 1px dashed $white;
+}
