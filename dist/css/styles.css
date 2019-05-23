@@ -16237,8 +16237,19 @@ a.text-dark:hover, a.text-dark:focus {
     .unhrd-grid {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: repeat(5, auto);
-      grid-column-gap: 30px; } }
+      padding: 3rem; } }
   .unhrd-grid .lead {
+    margin-bottom: 0; }
+
+.storage-grid {
+  display: grid; }
+  @media (min-width: 768px) {
+    .storage-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, -webkit-min-content) auto;
+      grid-template-rows: repeat(4, min-content) auto;
+      padding: 3rem; } }
+  .storage-grid .lead {
     margin-bottom: 0; }
 
 .media {

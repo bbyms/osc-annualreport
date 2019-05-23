@@ -97,13 +97,27 @@
 	@include media-breakpoint-up(md) {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(5, auto);
-		grid-column-gap: $grid-gutter-width;
+		padding: 3rem;
 	}
 
 	.lead {
 		margin-bottom: 0;
 	}
+}
 
+.storage-grid {
+	display: grid;
+
+	@include media-breakpoint-up(md) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(4, min-content) auto;
+		// grid-column-gap: $grid-gutter-width;
+		padding: 3rem;
+	}
+
+	.lead {
+		margin-bottom: 0;
+	}
 }
 
 // Media Item -----------------------------------
