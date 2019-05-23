@@ -16276,9 +16276,13 @@ h4 {
   border-bottom: 1px solid #fff; }
 
 .title {
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 900;
-  letter-spacing: 3rem; }
+  letter-spacing: 1rem; }
+  @media (min-width: 768px) {
+    .title {
+      font-size: 7rem;
+      letter-spacing: 3rem; } }
   @media (min-width: 992px) {
     .title {
       font-size: 10rem; } }
@@ -16479,7 +16483,9 @@ h4 {
 
 .aviation-image {
   background-image: url("/images/aviation.jpg");
-  background-position: 0 -100px; }
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .cbt-image {
   background-image: url("/images/cbt.jpg");
@@ -16488,8 +16494,9 @@ h4 {
 
 .bilateral-image {
   background-image: url("/images/bilateral.jpg");
-  background-position: center;
-  background-attachment: fixed; }
+  background-position: top left;
+  background-attachment: fixed;
+  background-size: cover; }
 
 .unhas-image {
   background-image: url("/images/unhas.jpg");

@@ -25,7 +25,9 @@
 
 .aviation-image {
     background-image: url('/images/aviation.jpg');
-    background-position: 0 -100px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .cbt-image {
@@ -36,8 +38,9 @@
 
 .bilateral-image {
     background-image: url('/images/bilateral.jpg');
-    background-position: center;
-    background-attachment: fixed;
+    background-position: top left;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 .unhas-image {

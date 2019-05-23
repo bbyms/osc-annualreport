@@ -39,9 +39,14 @@ h4 {
 
 // Alia -----------------------------------
 .title {
-  font-size: 7rem;
+  font-size: 5rem;
   font-weight: 900;
-  letter-spacing: 3rem;
+  letter-spacing: 1rem;
+
+  @include media-breakpoint-up(md) {
+	font-size: 7rem;
+	letter-spacing: 3rem;
+  }
 
   @include media-breakpoint-up(lg) {
     font-size: 10rem;
