@@ -91,9 +91,24 @@
 	}
 }
 
+.unhrd-grid {
+	display: grid;
+
+	@include media-breakpoint-up(md) {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5, auto);
+		grid-column-gap: $grid-gutter-width;
+	}
+
+	.lead {
+		margin-bottom: 0;
+	}
+
+}
+
 // Media Item -----------------------------------
 .media {
-    margin: $grid-gutter-width 0;
+    margin: $grid-gutter-width / 2 0;
 
     p {
         margin-bottom: 0;
