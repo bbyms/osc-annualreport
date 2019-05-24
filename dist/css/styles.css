@@ -16321,6 +16321,9 @@ h4 {
   padding-top: 15px;
   padding-bottom: 15px; }
 
+.serif {
+  font-family: Georgia, serif; }
+
 .figure-icon {
   fill: #0A6EB4;
   height: 100px;
@@ -16509,6 +16512,29 @@ h4 {
 
 .border-dashed {
   border-top: 1px dashed #fff; }
+
+.innovation {
+  background-image: url("/images/innovationBg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.largeNews {
+  background-image: url("/images/largeNews.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.sherp {
+  background-image: url("/images/sherp.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.news p {
+  font-size: 12px;
+  color: #000;
+  line-height: normal; }
 
 .foodProc-image {
   background-image: url("/images/foodProc.jpg");

@@ -88,3 +88,32 @@
 .border-dashed {
 	border-top: 1px dashed $white;
 }
+
+.innovation {
+	background-image: url('/images/innovationBg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.largeNews {
+	background-image: url('/images/largeNews.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.sherp {
+	background-image: url('/images/sherp.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.news {
+	p {
+		font-size: 12px;
+		color: $black;
+		line-height: normal;
+	}
+}
