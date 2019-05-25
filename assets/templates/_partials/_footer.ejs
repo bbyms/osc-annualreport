@@ -18,6 +18,14 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
+
+	$('.nav-button').click(function() {
+		$('.navigation-list').toggleClass('expand');
+	});
+
+	$('.nav-anchor').click(function(){
+		$('.navigation-list').removeClass('expand');
+	});
 </script>
 </body>
 

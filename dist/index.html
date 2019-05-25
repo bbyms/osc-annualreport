@@ -35,23 +35,31 @@
 <body>
   <main>
 	<section class="section section-100 cover ">
-    <div class="ribbon" data-aos="fade" data-aos-duration="1000" data-aos-easing="ease-in-out"
-    data-aos-mirror="true"
-    data-aos-once="false">
-        <img src="images/wfp-logo-vertical-white-en.svg" alt="World Food Programme">
-    </div>
-    <div class="cover-title" data-aos="fade" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out">
-        <div>
-            <h1 class="text-uppercase font-weight-bold" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="ease-in-out" 
-            >WFP Supply Chain</h1>
-            <br />
-            <h1 data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000" data-aos-easing="ease-in-out" 
-            >2018 in Review</h1>
-        </div>
-    </div>
+	<div class="ribbon" data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true"
+		data-aos-once="false">
+		<img src="images/wfp-logo-vertical-white-en.svg" alt="World Food Programme">
+	</div>
+	<a href="#numbers" class="btn btn-outline-light rounded-circle btn-scroll text-uppercase mx-auto" data-aos="fade" data-aos-delay="1000" data-aos-duration="1000"
+	data-aos-easing="ease-in-out">
+		scroll down
+		<svg class="icon-sm fill-white">
+			<use xlink:href="sprite.svg#chevron-down"></use>
+		</svg>
+	</a>
+	<div class="cover-title" data-aos="fade" data-aos-duration="1000"
+		data-aos-easing="ease-in-out">
+		<div>
+			<h1 class="text-uppercase font-weight-bold" data-aos="fade" data-aos-duration="1000"
+				data-aos-easing="ease-in-out">WFP Supply Chain</h1>
+			<br />
+			<h1 data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">2018 in
+				Review</h1>
+		</div>
+	</div>
+
 </section>
 	
-	<section class="section section-100 bg-dark pt-5 pb-5">
+	<section class="section section-100 bg-dark pt-5 pb-5" id="numbers">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 offset-md-2 col-xl-10 offset-xl-1">
@@ -2701,6 +2709,145 @@
 </section>
     
   </main>
+
+  <div class="navigation">
+	<button class="nav-button text-white text-uppercase">sections</button>
+</div>
+
+<!-- <div class="navigation-list">
+
+	<div>
+		<h5 class="text-white font-weight-bold text-uppercase">
+			Introduction
+		</h5>
+		<a href="">
+			2018 Supply Chain in numbers
+		</a>
+
+		<a href="">
+			Elements of WFP Supply Chain
+		</a>
+
+		<a href="">
+			The Journey of Wheat
+		</a>
+
+		<a href="">
+			Emergency Response
+			In 2018
+		</a>
+	</div>
+
+
+	<div>
+		<h5 class="text-white font-weight-bold text-uppercase">
+			End-to-End Supply Chain: From Planning to Deliver
+		</h5>
+
+		<a href="">
+			Planning
+		</a>
+
+		<a href="">
+			Advisory Services
+		</a>
+
+		<a href="">
+			Food Procurement
+		</a>
+
+		<a href="">
+			Food Safety and Quality
+		</a>
+
+		<a href="">
+			Goods and Services Procurement
+		</a>
+
+		<a href="">
+			SURFACE TRANSPORT
+		</a>
+
+		<a href="">
+			school feeding activities
+		</a>
+
+		<a href="">
+			shipping
+		</a>
+
+		<a href="">
+			Aviation
+		</a>
+
+		<a href="">
+			storage
+		</a>
+
+		<a href="">
+			Cash-Based Transfers and Markets
+		</a>
+	</div>
+
+	<div>
+		<h5 class="text-white font-weight-bold text-uppercase">
+			support to the humanitarian community
+		</h5>
+
+		<a href="">
+			Bilateral Service Provision
+		</a>
+
+		<a href="">
+			United Nations Humanitarian Air Service
+		</a>
+
+		<a href="">Logistics Cluster</a>
+
+		<a href="">
+			United Nations Humanitarian Response Depot
+		</a>
+	</div>
+
+	<div>
+		<h5 class="text-white font-weight-bold text-uppercase">
+			Looking forward
+		</h5>
+		<a href="">
+			Innovation
+		</a>
+
+		<a href="">
+			WORKING WITH PARTNERS TO MAXIMIZE EFFICIENCY
+		</a>
+
+	</div>
+
+</div> -->
+
+<div class="navigation-list d-flex align-items-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3 ">
+					<a href="#numbers" class="btn btn-block btn-lg btn-dark nav-anchor">
+							Introduction
+						</a>
+					
+						<a href="#" class="btn btn-block btn-lg btn-dark">
+							End-to-End Supply Chain: From Planning to Deliver
+						</a>
+					
+						<a href="#" class="btn btn-block btn-lg btn-dark">
+							support to the humanitarian community
+						</a>
+					
+						<a href="#" class="btn btn-block btn-lg btn-dark">
+							Looking forward
+						</a>
+			</div>
+		</div>
+	</div>
+</div>
   <footer class="footer">
 
 </footer>
@@ -2721,6 +2868,14 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
     AOS.init();
+
+	$('.nav-button').click(function() {
+		$('.navigation-list').toggleClass('expand');
+	});
+
+	$('.nav-anchor').click(function(){
+		$('.navigation-list').removeClass('expand');
+	});
 </script>
 </body>
 
