@@ -1,6 +1,5 @@
 .cover {
     background-image: url('/images/cover.jpg');
-    background-attachment: fixed;
     background-position: bottom;
     background-color: $primary;
     
@@ -18,11 +17,10 @@
 		grid-row-gap: $grid-gutter-width;
 	}
 
-
-	// grid for md and up screens
 	@include media-breakpoint-up(md) {
 		grid-template-columns: 100px auto max-content;
 		padding: $grid-gutter-width;
+		background-attachment: fixed;
 	}
 
     h1 {

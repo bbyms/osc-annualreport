@@ -97,12 +97,10 @@ html {
 
 .unhrd-grid {
 
-	@include media-breakpoint-up(md) {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(5, auto);
-		grid-column-gap: $grid-gutter-width;
-	}
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-column-gap: $grid-gutter-width;
 
 	padding: 3rem;
 

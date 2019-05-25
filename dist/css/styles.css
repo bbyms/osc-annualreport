@@ -16235,13 +16235,11 @@ html {
     text-align: center; }
 
 .unhrd-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(5, auto);
+  grid-column-gap: 30px;
   padding: 3rem; }
-  @media (min-width: 768px) {
-    .unhrd-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(5, auto);
-      grid-column-gap: 30px; } }
   .unhrd-grid .lead {
     margin-bottom: 0; }
 
@@ -16504,7 +16502,6 @@ h4 {
 
 .cover {
   background-image: url("/images/cover.jpg");
-  background-attachment: fixed;
   background-position: bottom;
   background-color: #0A6EB4;
   -webkit-box-align: end;
@@ -16524,7 +16521,8 @@ h4 {
     .cover {
       grid-template-columns: 100px auto -webkit-max-content;
       grid-template-columns: 100px auto max-content;
-      padding: 30px; } }
+      padding: 30px;
+      background-attachment: fixed; } }
   .cover h1 {
     font-size: 3rem;
     background-color: #0A6EB4;
@@ -16629,8 +16627,10 @@ h4 {
 .end {
   background-image: url("/images/end.jpg");
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed; }
+  background-position: center; }
+  @media (min-width: 768px) {
+    .end {
+      background-attachment: fixed; } }
 
 .yemen {
   background-image: url("/images/yemen.png");
@@ -16674,18 +16674,24 @@ h4 {
 
 .foodProc-image {
   background-image: url("/images/foodProc.jpg");
-  background-position: center;
-  background-attachment: fixed; }
+  background-position: center; }
+  @media (min-width: 768px) {
+    .foodProc-image {
+      background-attachment: fixed; } }
 
 .goods-image {
   background-image: url("/images/goods.jpg");
-  background-position: center;
-  background-attachment: fixed; }
+  background-position: center; }
+  @media (min-width: 768px) {
+    .goods-image {
+      background-attachment: fixed; } }
 
 .planning-image {
   background-image: url("/images/planning.jpg");
-  background-position: center;
-  background-attachment: fixed; }
+  background-position: center; }
+  @media (min-width: 768px) {
+    .planning-image {
+      background-attachment: fixed; } }
 
 .shipping-image {
   background-image: url("/images/shipping.jpg");
@@ -16699,14 +16705,18 @@ h4 {
 
 .cbt-image {
   background-image: url("/images/cbt.jpg");
-  background-position: top;
-  background-attachment: fixed; }
+  background-position: top; }
+  @media (min-width: 768px) {
+    .cbt-image {
+      background-attachment: fixed; } }
 
 .bilateral-image {
   background-image: url("/images/bilateral.jpg");
   background-position: top left;
-  background-attachment: fixed;
   background-size: cover; }
+  @media (min-width: 768px) {
+    .bilateral-image {
+      background-attachment: fixed; } }
 
 .unhas-image {
   background-image: url("/images/unhas.jpg");

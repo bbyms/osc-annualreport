@@ -3,19 +3,25 @@
 .foodProc-image {
     background-image: url('/images/foodProc.jpg');
     background-position: center;
-    background-attachment: fixed;
+    @include media-breakpoint-up(md) {
+		background-attachment: fixed;
+	}
 }
 
 .goods-image {
     background-image: url('/images/goods.jpg');
-    background-position: center;
-    background-attachment: fixed;
+	background-position: center;
+	@include media-breakpoint-up(md) {
+		background-attachment: fixed;
+	}
 }
 
 .planning-image {
     background-image: url('/images/planning.jpg');
     background-position: center;
-    background-attachment: fixed;
+    @include media-breakpoint-up(md) {
+		background-attachment: fixed;
+	}
 }
 
 .shipping-image {
@@ -33,13 +39,17 @@
 .cbt-image {
     background-image: url('/images/cbt.jpg');
     background-position: top;
-    background-attachment: fixed;
+    @include media-breakpoint-up(md) {
+		background-attachment: fixed;
+	}
 }
 
 .bilateral-image {
     background-image: url('/images/bilateral.jpg');
     background-position: top left;
-	background-attachment: fixed;
+	@include media-breakpoint-up(md) {
+		background-attachment: fixed;
+	}
 	background-size: cover;
 }
 

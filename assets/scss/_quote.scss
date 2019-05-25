@@ -41,7 +41,6 @@
   background-image: url("/images/alia.jpg");
   background-size: cover;
   background-position: top;
-//   background-attachment: fixed;
 }
 
 .donor {
@@ -65,7 +64,9 @@
   background-image: url("/images/end.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  @include media-breakpoint-up(md) {
+	background-attachment: fixed;
+  }
 }
 
 .yemen {
