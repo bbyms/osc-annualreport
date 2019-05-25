@@ -4,12 +4,26 @@
     background-position: bottom;
     background-color: $primary;
     
-    display: grid;
-	grid-template-columns: 100px auto max-content;
-	padding: $grid-gutter-width;
 	align-items: flex-end;
 	z-index: 3;
 	position: relative;
+
+	display: grid;
+	padding: $grid-gutter-width;
+	grid-column-gap: $grid-gutter-width;
+
+	@include media-breakpoint-down(sm) {
+		grid-template-columns: 100px auto;
+		grid-template-rows: 1fr 100px;
+		grid-row-gap: $grid-gutter-width;
+	}
+
+
+	// grid for md and up screens
+	@include media-breakpoint-up(md) {
+		grid-template-columns: 100px auto max-content;
+		padding: $grid-gutter-width;
+	}
 
     h1 {
         font-size: 3rem;
@@ -24,7 +38,6 @@
 
     .ribbon {
         background-color: $primary;
-        // height: calc(100vh - $grid-gutter-width * 2);
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -48,4 +61,10 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+
+	@include media-breakpoint-down(sm) {
+		grid-row: 2;
+		margin: auto;
+		grid-column: 1 / 3;
+	}
 }

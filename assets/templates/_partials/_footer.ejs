@@ -20,12 +20,14 @@
     AOS.init();
 
 	$('.nav-button').click(function() {
+		$('#nav-icon1').toggleClass('open');
 		$('.navigation-list').toggleClass('expand');
 	});
 
 	$('.nav-anchor').click(function(){
 		$('.navigation-list').removeClass('expand');
 	});
+
 </script>
 </body>
 

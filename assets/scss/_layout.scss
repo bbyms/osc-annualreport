@@ -96,11 +96,15 @@ html {
 }
 
 .unhrd-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(5, auto);
+
+	@include media-breakpoint-up(md) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5, auto);
+		grid-column-gap: $grid-gutter-width;
+	}
+
 	padding: 3rem;
-	grid-column-gap: $grid-gutter-width;
 
 	.lead {
 		margin-bottom: 0;
@@ -108,10 +112,13 @@ html {
 }
 
 .storage-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: repeat(4, min-content) auto;
-	grid-column-gap: $grid-gutter-width;
+	@include media-breakpoint-up(md) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(4, min-content) auto;
+		grid-column-gap: $grid-gutter-width;
+	}
+
 	padding: 3rem;
 
 	.lead {
@@ -173,4 +180,66 @@ html {
 	transform: translateY(0);	
 	transition: transform .3s ease-in-out;
 }
+
+#nav-icon1 {
+	width: 30px;
+	height: 15px;
+	position: relative;
+	margin: 10px auto;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: .5s ease-in-out;
+	-moz-transition: .5s ease-in-out;
+	-o-transition: .5s ease-in-out;
+	transition: .5s ease-in-out;
+	cursor: pointer;
+  }
+  
+  #nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+	display: block;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	background: $white;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+  }
+  
+  #nav-icon1 span:nth-child(1) {
+	top: 0px;
+  }
+  
+  #nav-icon1 span:nth-child(2) {
+	top: 6px;
+  }
+  
+  #nav-icon1 span:nth-child(3) {
+	top: 12px;
+  }
+  
+  #nav-icon1.open span:nth-child(1) {
+	top: 6px;
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+  }
+  
+  #nav-icon1.open span:nth-child(2) {
+	opacity: 0;
+	left: -30px;
+  }
+  
+  #nav-icon1.open span:nth-child(3) {
+	top: 6px;
+	-webkit-transform: rotate(-135deg);
+	-moz-transform: rotate(-135deg);
+	-o-transform: rotate(-135deg);
+	transform: rotate(-135deg);
+  }
 
