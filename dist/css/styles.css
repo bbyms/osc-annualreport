@@ -16260,6 +16260,14 @@ html {
   .media p {
     margin-bottom: 0; }
 
+.error {
+  background-color: #0A6EB4; }
+
+.error-illustration {
+  height: 300px;
+  display: block;
+  margin: auto; }
+
 .nav-button {
   border: 0;
   background-color: transparent; }
@@ -16352,14 +16360,6 @@ html {
   top: 6px;
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg); }
-
-.error {
-  background-color: #0A6EB4; }
-
-.error-illustration {
-  height: 300px;
-  display: block;
-  margin: auto; }
 
 .unit-title {
   color: #000;
