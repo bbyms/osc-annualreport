@@ -91,6 +91,7 @@
 	position: absolute;
 	bottom: 0;
 	z-index: 1;
+	width: 100%;
 
 	@include media-breakpoint-up(md) {
 		left: 30px;
