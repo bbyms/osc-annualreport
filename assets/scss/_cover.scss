@@ -40,6 +40,7 @@
         padding-bottom: $grid-gutter-width;
 		width: 100px;
 		align-self: stretch;
+		-ms-grid-span: 2;
     }
 
     &-title {
@@ -57,6 +58,7 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	-ms-grid-row: 2;
 
 	@include media-breakpoint-down(sm) {
 		display: none;
