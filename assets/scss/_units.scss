@@ -18,7 +18,8 @@
 
 .planning-image {
     background-image: url('/images/planning.jpg');
-    background-position: center;
+	background-position: center;
+	
     @include media-breakpoint-up(md) {
 		background-attachment: fixed;
 	}
