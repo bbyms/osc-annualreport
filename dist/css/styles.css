@@ -16698,6 +16698,9 @@ h4 {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .aviation-image {
+      background-attachment: fixed; } }
 
 .cbt-image {
   background-image: url("/images/cbt.jpg");

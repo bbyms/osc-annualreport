@@ -34,6 +34,9 @@
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	@include media-breakpoint-up(md) {
+		background-attachment: fixed;
+	}
 }
 
 .cbt-image {
