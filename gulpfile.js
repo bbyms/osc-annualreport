@@ -41,7 +41,7 @@ var config = {
     gulp.task('sass', function () {
        return gulp.src('assets/scss/**/*.scss')
           .pipe(sass())
-          .pipe(postcss([ autoprefixer({ browsers: ['last 2 versions'] }) ]))
+          .pipe(postcss([ autoprefixer() ]))
           .pipe(gulp.dest('./dist/css'))
           .pipe(browserSync.stream());
     });

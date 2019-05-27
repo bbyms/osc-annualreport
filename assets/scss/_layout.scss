@@ -26,6 +26,7 @@ html {
 }
 
 // Grids----------------------------------------
+/* autoprefixer grid: autoplace */
 
 .grid-2 {
     @include media-breakpoint-up(md) {
@@ -67,13 +68,13 @@ html {
 	padding-bottom: 0;
 	background-image: linear-gradient( rgba(0, 0, 0, 0),  rgba(0, 0, 0, 0.5));
 	
-	@include media-breakpoint-up(md) {
-		display: grid;
-		grid-template-columns: 1fr repeat(auto, 8);
-		grid-template-rows: auto auto auto;
-		grid-column-gap: 5px;
-		grid-row-gap: 10px;
-	}
+	// @include media-breakpoint-up(md) {
+	// 	display: grid;
+	// 	grid-template-columns: 1fr repeat(auto, 8);
+	// 	grid-template-rows: auto auto auto;
+	// 	grid-column-gap: 5px;
+	// 	grid-row-gap: 10px;
+	// }
 
 
 	h4 {
