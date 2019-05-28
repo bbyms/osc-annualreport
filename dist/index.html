@@ -13,9 +13,10 @@
     <meta property="og:title"              content="WFP SUPPLY CHAIN ANNUAL REPORT - 2018 in Review" />
     <meta property="og:description"        content="WFP SUPPLY CHAIN ANNUAL REPORT - 2018 in Review" />
     <meta property="og:image"              content="" />
-
+	
+	<link rel="stylesheet" href="/css/aos.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/aos.css">
+
     <!--  
     Favicons
     =============================================
@@ -33,28 +34,42 @@
 
 <body>
   <main>
-	<section class="section section-100 cover ">
-	<div class="ribbon" data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true"
-		data-aos-once="false">
-		<img src="images/wfp-logo-vertical-white-en.svg" alt="World Food Programme">
-	</div>
-	<a href="#numbers" class="btn btn-outline-light rounded-circle btn-scroll text-uppercase mx-auto" data-aos="fade" data-aos-delay="1000" data-aos-duration="1000"
-	data-aos-easing="ease-in-out">
-		scroll down
-		<svg class="icon-sm fill-white">
-			<use xlink:href="sprite.svg#chevron-down"></use>
-		</svg>
-	</a>
-	<div class="cover-title" data-aos="fade" data-aos-duration="1000"
-		data-aos-easing="ease-in-out">
-		<div>
-			<h1 class="text-uppercase font-weight-bold" data-aos="fade" data-aos-duration="1000"
-				data-aos-easing="ease-in-out">WFP Supply Chain</h1>
-			<br />
-			<h1 data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">2018 in
-				Review</h1>
+	<section class="container-fluid">
+
+	<div class="row section-100 section cover pt-5 pb-5">
+		<div class="col" style="height:100%;">
+				<div class="ribbon" data-aos="fade" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-mirror="true"
+				data-aos-once="false" style="height:100%;">
+				<img src="images/wfp-logo-vertical-white-en.svg" alt="World Food Programme">
+			</div>
+		</div>
+
+		<div class="col">
+				<a href="#numbers" class="btn btn-outline-light rounded-circle btn-scroll text-uppercase mx-auto" data-aos="fade" data-aos-delay="1000" data-aos-duration="1000"
+				data-aos-easing="ease-in-out">
+					scroll <br /> down
+					<svg class="icon-sm fill-white">
+						<use xlink:href="sprite.svg#chevron-down"></use>
+					</svg>
+				</a>
+		</div>
+
+		<div class="col">
+				<div class="cover-title" data-aos="fade" data-aos-duration="1000"
+				data-aos-easing="ease-in-out">
+				<div>
+					<h1 class="text-uppercase font-weight-bold" data-aos="fade" data-aos-duration="1000"
+						data-aos-easing="ease-in-out">WFP Supply Chain</h1>
+					<br />
+					<h1 data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">2018 in
+						Review</h1>
+				</div>
+			</div>
 		</div>
 	</div>
+	
+	
+	
 
 </section>
 	
@@ -65,7 +80,7 @@
 				<h1 class="unit-title text-center text-white">2018 Supply Chain in numbers</h1>
 
 				<div class="row">
-					<div class="col-md-6 offset-md-3 d-flex justify-content-center">
+					<div class="col d-flex justify-content-center">
 						<div class="media" data-aos="fade-up" data-aos-duration="1000">
 							<svg class="figure-icon fill-light-blue align-self-center mr-3">
 								<use xlink:href="sprite.svg#foodBags"></use>
@@ -351,7 +366,7 @@
 				</div>
 			</div>
 			<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-				<img src="images/elements.svg" class="img-fluid"
+				<img src="images/elements.svg" class="img-fluid elements-img"
 					alt="Orbit grahic with icons representing the several elements of supply chain">
 			</div>
 			<div class="col-lg-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
@@ -647,15 +662,15 @@
             <use xlink:href="sprite.svg#quote"></use>
           </svg>
           <br />
-          <q>
+          <p class="quote">
             I studied mechanics for three years before getting my first job in a
             car repair shop. After a few years, my boss told me I could not get
             a raise because, as a woman, I could not be earning more than men. I
             resigned and found a job with WFP, where I have been working since
             2007. Since then I do feel treated as an equal and it is really
-            rewarding.
+            rewarding.”
           </q>
-          <p>
+          <p class="quote-name">
             Chifundo CHANGADEYA, <br />
             WFP’S CHIEF MECHANIC in Malawi, <br />
             specializes in truck maintenance
@@ -667,7 +682,7 @@
 </section>
 
 
-    <section class="section section-20 divider px-5" id="entoendSupplyChain">
+    <section class="section pt-5 pb-5 divider px-5" id="entoendSupplyChain">
     <h1 class="text-uppercase" data-aos="fade-right" data-aos-duration="1000"><strong>End-to-End Supply Chain:</strong> From Planning to Delivery</h1>
 </section>
 
@@ -748,13 +763,13 @@
                             <use xlink:href="sprite.svg#quote"></use>
                         </svg>
                         <br />
-                    <q>
+                    <p class="quote">
                         Supply chain planning is a magic ball which ensures a cost-effective and efficient operation in
                         the country. Whilst we have had to deliver more food assistance than before, we have been able
                         to make substantial reductions in both the delivery costs and lead times, ensuring help gets to
                         the maximum number of people in need.”
-                    </q>
-                    <p>
+					</p>
+                    <p class="quote-name">
                         Adham Effendi <br />
                         Head of Logistics, South Sudan
                     </p>
@@ -883,54 +898,57 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-xl-10 offset-xl-1 figures">
-                <div class="d-flex justify-content-md-center">
-                    <div class="grid-2 grid-item" data-aos="fade-up" data-aos-duration="1000">
-                        <div>
-                            <span class="figure">3.6M</span>
-                            <p class="lead text-white">
-                                MT procured in <br />
-                                2018 worldwide for <br />
-                                a total value of <br />
-                            </p>
-                        </div>
-                        <svg class="figure-icon icon-lg" style="-ms-grid-column: 2;">
-                            <use xlink:href="sprite.svg#procured"></use>
-                        </svg>
-                        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" style="grid-column: 1 / 3; -ms-grid-column: 1; -ms-grid-column-span: 2; -ms-grid-row: 2;">
-                            <span class="figure">
-                                <small>US$</small>1.6B
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-md-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-                    <div>
-                        <svg class="figure-icon">
-                            <use xlink:href="sprite.svg#chart"></use>
-                        </svg>
-                        <span class="figure">20%</span>
-                        <p class="lead text-white">
-                            increase compared <br />
-                            to
-                            2017
-                        </p>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-md-center" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="1500">
-                    <div>
-                        <span class="figure">
-                            79%
-                        </span>
-                        <p class="lead text-white">
-                            of 2018 procurement <br />
-                            was in developing <br />
-                            countries
-                        </p>
-                        <svg class="figure-icon">
-                            <use xlink:href="sprite.svg#food"></use>
-                        </svg>
-                    </div>
-                </div>
+                <div class="row">
+						<div class="col">
+								<div class="media" data-aos="fade-up" data-aos-duration="1000">
+									<div class="media-body">
+										<span class="figure">3.6M</span>
+										<p class="lead text-white">
+											MT procured in <br />
+											2018 worldwide for <br />
+											a total value of <br />
+										</p>
+									</div>
+									<svg class="figure-icon icon-lg ml-3">
+										<use xlink:href="sprite.svg#procured"></use>
+									</svg>
+
+								</div>
+								<div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+									<span class="figure">
+										<small>US$</small>1.6B
+									</span>
+								</div>
+							</div>
+							<div class="col d-flex justify-content-md-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+								<div>
+										<svg class="figure-icon">
+												<use xlink:href="sprite.svg#chart"></use>
+											</svg>
+											<span class="figure">20%</span>
+											<p class="lead text-white">
+												increase compared <br />
+												to
+												2017
+											</p>
+								</div>
+							</div>
+							<div class="col d-flex justify-content-md-center" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="1500">
+								<div>
+									<span class="figure">
+										79%
+									</span>
+									<p class="lead text-white">
+										of 2018 procurement <br />
+										was in developing <br />
+										countries
+									</p>
+									<svg class="figure-icon">
+										<use xlink:href="sprite.svg#food"></use>
+									</svg>
+								</div>
+							</div>
+				</div>
             </div>
         </div>
     </div>
@@ -938,226 +956,226 @@
 <section class="section section-100 foodProc-image"></section>
 
     <section class="unit-content">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 offset-lg-2 col-xl-3 offset-xl-1 pt-5 pb-5">
-                <h1 class="unit-title">
-                    Food Safety and Quality
-                </h1>
-                <h2 class="unit-subtitle text-success">
-                    WFP integrates a comprehensive food safety and quality assurance system in its supply chain process,
-                    from programme design to delivery, to ensure beneficiaries have access to safe and high-quality food
-                </h2>
-                <p class="lead mt-5 mb-5">
-                    The importance of the work carried out by the unit dedicated to food safety and quality has grown
-                    steadily with WFP’s food basket becoming more complex and relying more on processed food.
-                </p>
-                <img src="images/foodSafety.jpg" class="img-fluid" alt="">
-            </div>
-            <div class="col-lg-5 col-xl-7">
-                <div class="grid-2">
-                    <div class="px-5 pt-5">
-                        <h3 class="text-uppercase text-success font-weight-bold">Food Safety and Quality</h3>
-                    </div>
-                    <div class="bg-success px-5 pt-4 pb-3">
-                        <h3 class="text-uppercase text-white font-weight-bold">
-                            KEY ACHIEVEMENTS IN 2018
-                        </h3>
-                    </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 offset-lg-2 col-xl-3 offset-xl-1 pt-5 pb-5">
+				<h1 class="unit-title">
+					Food Safety and Quality
+				</h1>
+				<h2 class="unit-subtitle text-success">
+					WFP integrates a comprehensive food safety and quality assurance system in its supply chain process,
+					from programme design to delivery, to ensure beneficiaries have access to safe and high-quality food
+				</h2>
+				<p class="lead mt-5 mb-5">
+					The importance of the work carried out by the unit dedicated to food safety and quality has grown
+					steadily with WFP’s food basket becoming more complex and relying more on processed food.
+				</p>
+				<img src="images/foodSafety.jpg" class="img-fluid" alt="">
+			</div>
+			<div class="col-lg-5 col-xl-7">
+				<div class="row">
+					<div class="col px-5 pt-5">
+						<h3 class="text-uppercase text-success font-weight-bold">Food Safety and Quality</h3>
+					</div>
+					<div class="col bg-success px-5 pt-5 pb-3">
+						<h3 class="text-uppercase text-white font-weight-bold">
+							KEY ACHIEVEMENTS IN 2018
+						</h3>
+					</div>
+				</div>
 
-                    <div class="px-5 pt-4 pb-3">
-                        <p class="text-success">
-                            Evaluates vendors and provides assistance in managing inspection contracts
-                        </p>
-                        <svg class="fill-green icon-md">
-                            <use xlink:href="sprite.svg#solutions"></use>
-                        </svg>
-                    </div>
+				<div class="row">
+					<div class="col px-5 pt-5">
+						<p class="text-success">
+							Evaluates vendors and provides assistance in managing inspection contracts
+						</p>
+						<svg class="fill-green icon-md">
+							<use xlink:href="sprite.svg#solutions"></use>
+						</svg>
+					</div>
+					<div class="col bg-success px-5 pt-5 pb-3">
+						<p class="text-white">
+							Built a platform for monitoring laboratory results capturing 21,000 data points and
+							analysing trends of underperformance
+						</p>
+					</div>
+				</div>
 
-                    <div class="bg-success px-5 pt-4 pb-3">
-                        <p class="text-white">
-                            Built a platform for monitoring laboratory results capturing 21,000 data points and
-                            analysing trends of underperformance
-                        </p>
-                    </div>
+				<div class="row">
+					<div class="col px-5 pt-5">
+						<p class="text-success">
+							Conducts research to improve WFP food baskets
+						</p>
+						<svg class="fill-green icon-md">
+							<use xlink:href="sprite.svg#basket"></use>
+						</svg>
+					</div>
+					<div class="col bg-success px-5 pt-5 pb-3">
+						<p class="text-white">
+							Completed technical review of <strong>20 food specifications</strong> of food basket items
+						</p>
+					</div>
+				</div>
 
-                    <div class="px-5 pt-4 pb-3">
-                        <p class="text-success">
-                            Conducts research to improve WFP food baskets
-                        </p>
-                        <svg class="fill-green icon-md">
-                            <use xlink:href="sprite.svg#basket"></use>
-                        </svg>
-                    </div>
-                    <div class="bg-success px-5 pt-4 pb-3">
-                        <p class="text-white">
-                            Completed technical review of <strong>20 food specifications</strong> of food basket items 
-                        </p>
-                    </div>
+				<div class="row">
+					<div class="col px-5 pt-5">
+						<p class="text-success">
+							Works on product and packaging specifications
+						</p>
+						<svg class="fill-green icon-md">
+							<use xlink:href="sprite.svg#can"></use>
+						</svg>
+					</div>
+					<div class="col bg-success px-5 pt-5 pb-3">
+						<p class="text-white">
+							<strong>Redesigned packaging</strong> of oil jerrycans to improve strength and reduce losses
+							and adverse
+							environmental impact
+						</p>
+					</div>
+				</div>
 
-                    <div class="px-5 pt-4 pb-3">
-                        <p class="text-success">
-                            Works on product and packaging specifications 
-                        </p>
-                        <svg class="fill-green icon-md">
-                            <use xlink:href="sprite.svg#can"></use>
-                        </svg>
-                    </div>
+				<div class="row">
+					<div class="col px-5 pt-5">
+						<p class="text-success">
+							Enhances suppliers’ capacity to prevent food safety and quality issues
+						</p>
+						<svg class="fill-green icon-md">
+							<use xlink:href="sprite.svg#assessment"></use>
+						</svg>
+					</div>
+					<div class="col bg-success px-5 pt-5 pb-3">
+						<p class="text-white">
+							Coordinated <strong>23 food safety and quality audits</strong> in nine countries
+						</p>
+					</div>
+				</div>
 
-                    <div class="bg-success px-5 pt-4 pb-3">
-                        <p class="text-white">
-                            <strong>Redesigned packaging</strong> of oil jerrycans to improve strength and reduce losses and adverse environmental impact 
-                        </p>
-                    </div>
+				<div class="row">
+					<div class="col px-5 pt-5">
+						<p class="text-success">
+							Collaborates with other actors on standard setting for food safety and quality
+						</p>
 
-                    <div class="px-5 pt-4 pb-3">
-                        <p class="text-success">
-                            Enhances suppliers’ capacity to prevent food safety and quality issues 
-                        </p>
-                        <svg class="fill-green icon-md">
-                            <use xlink:href="sprite.svg#assessment"></use>
-                        </svg>
-                    </div>
-
-                    <div class="bg-success px-5 pt-4 pb-3">
-                        <p class="text-white">
-                            Coordinated <strong>23 food safety and quality audits</strong> in nine countries 
-                        </p>
-                    </div>
-
-                    <div class="px-5 pt-4 pb-3">
-                        <p class="text-success">
-                            Collaborates with other actors on standard setting for food safety and quality
-                        </p>
-
-                        <svg class="fill-green icon-md">
-                            <use xlink:href="sprite.svg#safety"></use>
-                        </svg>
-                    </div>
-
-                    <div class="bg-success px-5 pt-4 pb-3">
-                        <p class="text-white">
-                            Led an <strong>interagency partnership</strong> comprising WFP, UNICEF, USAID, MSF and ICRC for streamlining food safety and quality processes such as supplier audits
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+						<svg class="fill-green icon-md">
+							<use xlink:href="sprite.svg#safety"></use>
+						</svg>
+					</div>
+					<div class="col bg-success px-5 pt-5 pb-3">
+						<p class="text-white">
+							Led an <strong>interagency partnership</strong> comprising WFP, UNICEF, USAID, MSF and ICRC
+							for streamlining food safety and quality processes such as supplier audits
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
     <section class="section unit-content pt-5 pb-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-xl-10 offset-xl-1 offset-lg-2">
-        <h1 class="unit-title">
-          Goods and Services Procurement
-        </h1>
-        <h2 class="unit-subtitle text-primary">
-          Goods and Services Procurement is essential to keep WFP operations
-          around the world running and making the most effective and efficient
-          use of WFP resources
-        </h2>
-        <p>
-          The unit establishes agreements with suppliers of goods and services
-          that can be used across operations.
-        </p>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-xl-10 offset-xl-1 offset-lg-2">
+				<h1 class="unit-title">
+					Goods and Services Procurement
+				</h1>
+				<h2 class="unit-subtitle text-primary">
+					Goods and Services Procurement is essential to keep WFP operations
+					around the world running and making the most effective and efficient
+					use of WFP resources
+				</h2>
+				<p>
+					The unit establishes agreements with suppliers of goods and services
+					that can be used across operations.
+				</p>
 
-        <div class="grid-3">
-          <p>
-            Procurement specialists provide guidance, advisory and support
-            services to country offices, and carry out oversight missions to
-            ensure the most effective and efficient use of WFP’s resources.
-          </p>
-          <span
-            class="figure text-primary"
-            style="grid-row: 2;"
-            data-aos="fade-up"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-          >
-            <small>US$</small>9.5M
-          </span>
-          <p
-            style="grid-row: 3;"
-            data-aos="fade-up"
-            data-aos-delay="500"
-            data-aos-duration="1000"
-          >
-            savings resulting from agreements for the purchase of Jet A1 fuel
-            and Satellite Telecoms
-          </p>
+				<div class="row">
+					<div class="col">
+						<p>
+							Procurement specialists provide guidance, advisory and support
+							services to country offices, and carry out oversight missions to
+							ensure the most effective and efficient use of WFP’s resources.
+						</p>
 
-          <div class="bg-primary px-3 pt-3 pb-3" style="grid-row: 1 / 4;">
-            <h6 class="text-uppercase text-white font-weight-bold">
-              yemen runs on WFP fuel
-            </h6>
-            <p class="text-white">
-              In 2018 WFP procured 36 million litres of diesel and petrol in
-              support of the humanitarian response in Yemen.
-            </p>
-            <p class="text-white">
-              This fuel has enabled WFP and its partners to run their operations
-              and provide crucial assistance to the vulnerable.
-            </p>
-          </div>
+						<span class="figure text-primary" data-aos="fade-up" data-aos-delay="500"
+							data-aos-duration="1000">
+							<small>US$</small>9.5M
+						</span>
+						<p data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+							savings resulting from agreements for the purchase of Jet A1 fuel
+							and Satellite Telecoms
+						</p>
+					</div>
 
-          <p style="grid-column: 3;">
-            The unit procures goods and services on behalf of the entire
-            organization, not just Supply Chain. From new HR software to jet
-            fuel for aviation.
-          </p>
-          <span
-            class="figure text-primary"
-            style="grid-column: 3;grid-row: 2;"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <small>US$</small>70M
-          </span>
-          <p
-            style="grid-column: 3;grid-row: 3;"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            value of commodity voucher contracts in Yemen managed by the unit in
-            2018
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+					<div class="col">
+						<div class="bg-primary px-3 pt-3 pb-3">
+							<h6 class="text-uppercase text-white font-weight-bold">
+								yemen runs on WFP fuel
+							</h6>
+							<p class="text-white">
+								In 2018 WFP procured 36 million litres of diesel and petrol in
+								support of the humanitarian response in Yemen.
+							</p>
+							<p class="text-white">
+								This fuel has enabled WFP and its partners to run their operations
+								and provide crucial assistance to the vulnerable.
+							</p>
+						</div>
+					</div>
+
+					<div class="col d-flex justify-content-between flex-column">
+						<p style="grid-column: 3;">
+							The unit procures goods and services on behalf of the entire
+							organization, not just Supply Chain. From new HR software to jet
+							fuel for aviation.
+						</p>
+						<div class="">
+								<span class="figure text-primary" data-aos="fade-up"
+								data-aos-duration="1000">
+								<small>US$</small>70M
+							</span>
+							<p style="grid-column: 3;grid-row: 3;" data-aos="fade-up" data-aos-duration="1000">
+								value of commodity voucher contracts in Yemen managed by the unit in
+								2018
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section class="section section-100 goods-image">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 offset-md-8 pt-5">
-        <div data-aos="fade-up" data-aos-duration="1000">
-          <span class="figure text-primary"> <small>US$</small>763M </span>
-          <p class="lead pb-4">
-            goods and services
-            <br />
-            purchased in 2018
-          </p>
-        </div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 offset-md-8 pt-5">
+				<div data-aos="fade-up" data-aos-duration="1000">
+					<span class="figure text-primary"> <small>US$</small>763M </span>
+					<p class="lead pb-4">
+						goods and services
+						<br />
+						purchased in 2018
+					</p>
+				</div>
 
-        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-          <p class="lead mb-0">
-            from
-          </p>
-          <span class="figure text-primary">
-            152
-          </span>
-          <p class="lead">
-            countries
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+				<div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+					<p class="lead mb-0">
+						from
+					</p>
+					<span class="figure text-primary">
+						152
+					</span>
+					<p class="lead">
+						countries
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
-
 
     <section class="unit-content">
   <div class="container">
@@ -1316,14 +1334,14 @@
             <use xlink:href="sprite.svg#quote"></use>
           </svg>
           <br />
-          <q>
+          <p class="quote">
             I have on more than three occasions slept on the road when my truck
             got stuck in the mud or when the roads were impassable due to poor
             conditions. But I’m always inspired every time I arrive at a school
             to deliver food for school meals. I’m welcomed by children joyfully
-            shouting ‘Porridge! Porridge! Porridge!‘
-          </q>
-          <p>
+            shouting ‘Porridge! Porridge! Porridge!’”
+		  </p>
+          <p class="quote-name">
             STANLEY KONDOWE, A WFP TRUCK DRIVER IN MALAWI, DELIVERS SCHOOL MEALS
             AND LIFE-SAVING SUPPORT TO HARD-TO-REACH COMMUNITIES
           </p>
@@ -1385,7 +1403,7 @@
 <section class="section section-50 shipping-image pt-5 pb-5">
 	<div class="container">
 		<div class="row section-50">
-			<div class="col-lg-8 offset-lg-2 col-xl-10 offset-xl-1 d-flex flex-column">
+			<div class="col-lg-8 offset-lg-2 col-xl-10 offset-xl-1 section-50">
 				<h4 class="text-white tonnage">TOTAL TONNAGE SHIPPED</h4>
 				<div class="row shipping-figures align-self-end">
 					<div class="col" data-aos="fade-up" data-aos-duration="1000" data-aos-duration="1000" data-aos-delay="500">
@@ -1492,12 +1510,17 @@
   </div>
 </section>
 
-	
-	<!-- Postcard 01 -->
-	
-	<section class="section" style="line-height: 0;">
-  <video src="images/postcards/postcard01.mp4" width="100%" controls loop autoplay muted>
-</video>
+
+	<!-- Postcard 02 -->
+
+	<section class="section postcard section-100 pt-5 pb-5 px-5" id="postcard02">
+		<h1 class="unit-title">Postcards from the field</h1>
+	<img src="images/postcards/postcard03.png" alt="" data-aos="fade-right"
+	data-aos-duration="1000"
+	data-aos-delay="1000" class="img-fluid mx-auto">
+	<img src="images/postcards/postcard04.png" alt="" data-aos="fade-left"
+	data-aos-duration="1000"
+	data-aos-delay="1000" class="img-fluid">
 </section>
 
 
@@ -1571,7 +1594,7 @@
 
 			<div class="col-md-6 col-xl-4 offset-xl-1 bg-red text-white storage-grid">
 
-				<div class="media align-self-center" style="grid-column: 2;" data-aos="fade-up" data-aos-duration="1000">
+				<div class="media align-self-center" style="grid-column: 2; -ms-grid-column: 2;" data-aos="fade-up" data-aos-duration="1000">
 					<svg class="icon-md fill-red align-self-center mr-3">
 						<use xlink:href="sprite.svg#warehouses"></use>
 					</svg>
@@ -1583,7 +1606,7 @@
 					</div>
 				</div>
 
-				<div style="grid-column: 1; grid-row: 1 / 3;" class="mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+				<div style="grid-column: 1; grid-row: 1 / 3; -ms-grid-column: 1; -ms-grid-row: 1; -ms-grid-row-span: 2;" class="mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
 					<svg class="icon-md fill-red mb-3">
 						<use xlink:href="sprite.svg#globe"></use>
 					</svg>
@@ -1599,7 +1622,7 @@
 
 				</div>
 
-				<div class="media align-self-center mt-5" style="grid-column: 2; grid-row: 2 / 4;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+				<div class="media align-self-center mt-5" style="grid-column: 2; grid-row: 2 / 4; -ms-grid-column: 2; -ms-grid-row: 2; -ms-grid-row-span: 2;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
 					<svg class="icon-md fill-red align-self-center mr-3">
 						<use xlink:href="sprite.svg#wfp"></use>
 					</svg>
@@ -1612,7 +1635,7 @@
 
 				</div>
 
-				<div class="mb-5 d-flex align-items-end flex-column" style="grid-column: 2; grid-row: 4;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+				<div class="mb-5 d-flex align-items-end flex-column" style="grid-column: 2; grid-row: 4; -ms-grid-column: 2; -ms-grid-row: 4;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
 					<svg class="icon-md fill-red align-self-end ml-3">
 						<use xlink:href="sprite.svg#partners"></use>
 					</svg>
@@ -1621,14 +1644,14 @@
 
 				</div>
 
-				<div style="grid-column: 1; grid-row: 4;" class="align-self-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+				<div style="grid-column: 1; grid-row: 4; -ms-grid-column: 1; -ms-grid-row: 4;" class="align-self-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
 					<svg class="fill-white icon-lg mb-3 " >
 						<use xlink:href="sprite.svg#quote"></use>
 					</svg>
 				</div>
 
 				
-				<div style="grid-column: 1 / 3; grid-row: 5;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+				<div style="grid-column: 1 / 3; grid-row: 5; -ms-grid-column: 1; -ms-grid-column-span: 2; -ms-grid-row: 5;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
 					<div class="font-weight-bold text-uppercase mb-3 lead text-white">
 						We record very few food losses annually, a testament to our strict
 						food management and storage practices. We are also very happy to see
@@ -1645,11 +1668,16 @@
 	</div>
 </section>
 
-	<!-- Postcard 02 -->
-	
-	<section class="section" style="line-height: 0;">
-  <video src="images/postcards/postcardTwo.mp4" width="100%" controls loop autoplay muted>
-</video>
+	<!-- Postcard 01 -->
+
+	<section class="section postcard section-100 pt-5 pb-5 px-5" id="postcard01">
+		<h1 class="unit-title">Postcards from the field</h1>
+	<img src="images/postcards/postcard01.png" alt="" data-aos="fade"
+	data-aos-duration="1000"
+	data-aos-delay="1000" class="img-fluid mx-auto">
+	<img src="images/postcards/postcard02.png" alt="" data-aos="fade-left"
+	data-aos-duration="1000"
+	data-aos-delay="1000" class="img-fluid">
 </section>
 
 
@@ -1716,7 +1744,7 @@
 
 				<div class="row">
 					<div class="col">
-						<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.5 177.5">
+						<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.5 177.5" class="cb01">
 	<style>
 		.st0 {
 			opacity: .5
@@ -1825,7 +1853,7 @@
 				<div class="row">
 					<div class="col mb-3 mt-3">
 						
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.5 109.5">
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 517.5 109.5" class="cb02">
 	<style>
 		.st0 {
 			opacity: .5
@@ -1984,11 +2012,11 @@
 					<use xlink:href="sprite.svg#quote"></use>
 				</svg>
 				<div class="quote-text mb-5">
-					<q class="text-success">
+					<p class="quote text-success">
 						Before there were no shops in the area and we couldn’t buy any of the goods available now. When
 						we started we were not able to work very well, but through WFP’s trainings we are able to work
-						better and we learnt how to negotiate with other people.
-					</q>
+						better and we learnt how to negotiate with other people.”
+					</p>
 				</div>
 				<p class="text-uppercase text-success">
 					Jackline Nekesa Wafula, <br />
@@ -2002,9 +2030,14 @@
 	
 	<!-- Postcard 03 -->
 
-	<section class="section" style="line-height: 0;">
-  <video src="images/postcards/postcardThree.mp4" width="100%" controls loop autoplay muted>
-</video>
+	<section class="section postcard section-100 pt-5 pb-5 px-5" id="postcard03">
+		<h1 class="unit-title">Postcards from the field</h1>
+	<img src="images/postcards/postcard05.png" alt="" data-aos="fade-right"
+	data-aos-duration="1000"
+	data-aos-delay="1000" class="img-fluid mx-auto">
+	<img src="images/postcards/postcard06.png" alt="" data-aos="fade-left"
+	data-aos-duration="1000"
+	data-aos-delay="1000" class="img-fluid">
 </section>
 
 
@@ -2021,7 +2054,7 @@
     </div>
 </section>
 
-    <section class="section section-20 divider px-5" id="supportingCommunity">
+    <section class="section pt-5 pb-5 divider px-5" id="supportingCommunity">
     <h1 class="text-uppercase" data-aos="fade-right" data-aos-duration="1000">support to the humanitarian community</h1>
 </section>
 
@@ -2252,14 +2285,14 @@
 						<use xlink:href="sprite.svg#quote"></use>
 					</svg>
 					<br />
-					<q>
+					<p class="quote">
 						I’ve worked in logistics for over 14 years, and almost 9 years in the humanitarian sector.
 						Despite all the
 						ups and downs I realiZe there is no greater satisfaction thAn helping others in their time of
 						need. This is
-						also something I want to pass down to my daughter.
-					</q>
-					<p>
+						also something I want to pass down to my daughter.”
+					</p>
+					<p class="quote-name">
 						Samuel Terefe,<br />
 						Logistics Cluster Coordinator, Syria
 					</p>
@@ -2276,9 +2309,14 @@
 
 	<!-- Postcard 04 -->
 
-	<section class="section" style="line-height: 0;">
-  <video src="images/postcards/postcardFour.mp4" width="100%" controls loop autoplay muted>
-</video>
+	<section class="section postcard section-100 pt-5 pb-5 px-5" id="postcard04">
+		<h1 class="unit-title">Postcards from the field</h1>
+	<img src="images/postcards/postcard07.png" alt="" data-aos="fade-right"
+	data-aos-duration="1000"
+	data-aos-delay="1000" class="img-fluid mx-auto">
+	<img src="images/postcards/postcard08.png" alt="" data-aos="fade-left"
+	data-aos-duration="1000"
+	data-aos-delay="1000" class="img-fluid">
 </section>
 
 
@@ -2315,7 +2353,7 @@
 			</div>
 
 			<div class="col-md-6 col-xl-4 offset-xl-1 bg-blue text-white unhrd-grid">
-					<div class="media" style="grid-column: 1 / 3;" data-aos="fade-up" data-aos-duration="1000">
+					<div class="media" style="grid-column: 1 / 3; -ms-grid-column: 1; -ms-grid-column-span: 2;" data-aos="fade-up" data-aos-duration="1000">
 						<svg class="icon-md fill-blue align-self-center mr-3">
 							<use xlink:href="sprite.svg#money"></use>
 						</svg>
@@ -2329,7 +2367,7 @@
 						</div>
 					</div>
 
-					<div style="grid-column: 2;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+					<div style="grid-column: 2; -ms-grid-column: 2; -ms-grid-row: 2;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
 						<p class="lead text-white text-uppercase">
 							sent to
 						</p>
@@ -2351,7 +2389,7 @@
 					</div>
 	
 	
-					<div class=" align-self-center" style="grid-row: 2;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+					<div class=" align-self-center" style="grid-row: 2; -ms-grid-row: 2;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
 						<svg class="icon-md fill-blue">
 							<use xlink:href="sprite.svg#forklift"></use>
 						</svg>
@@ -2369,7 +2407,7 @@
 					
 
 	
-					<div class="align-self-end" style="grid-column: 2; grid-row: 3 / 5;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+					<div class="align-self-end" style="grid-column: 2; grid-row: 3 / 5; -ms-grid-column: 2; -ms-grid-row: 3; -ms-grid-row-span: 2;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
 							<svg class="icon-md fill-blue">
 									<use xlink:href="sprite.svg#globe"></use>
 								</svg>
@@ -2381,7 +2419,7 @@
 							</p>
 					</div>
 	
-					<div class="align-self-center" style="grid-column: 1; grid-row: 3 / 5;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+					<div class="align-self-center" style="grid-column: 1; grid-row: 3 / 5; -ms-grid-column: 1; -ms-grid-row: 3; -ms-grid-row-span: 2;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
 							<svg class="icon-md fill-blue">
 									<use xlink:href="sprite.svg#deployment"></use>
 								</svg>
@@ -2561,8 +2599,8 @@
 		<div class="row">
 			<div class="col-lg-4 offset-lg-2 col-xl-5 offset-xl-1 px-5 pt-5 pb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
 				<div class="quote-text mb-5">
-					<q>
-						THE PARTNERSHIP WITH RENAULT TRUCKS IS A REAL SOURCE OF MOTIVATION FOR OUR STAFF, AS WE CAN SEE
+					<p class="quote">
+							“THE PARTNERSHIP WITH RENAULT TRUCKS IS A REAL SOURCE OF MOTIVATION FOR OUR STAFF, AS WE CAN SEE
 						THE
 						PRACTICAL BENEFITS. BEFORE, WE WERE LOSING AROUND TWENTY TRUCKS PER YEAR IN CENTRAL AFRICA,
 						WHEREAS
@@ -2570,8 +2608,8 @@
 						YEAR WE HAVEN’T LOST ANY! OUR TEAMS ARE BETTER TRAINED IN FIXING BREAKDOWNS AS WELL AS IN
 						PREVENTIVE
 						TRUCK
-						MAINTENANCE. MAINTENANCE COSTS CAN BE REDUCED UP TO 50 PERCENT.
-					</q>
+						MAINTENANCE. MAINTENANCE COSTS CAN BE REDUCED UP TO 50 PERCENT.”
+				</p>
 				</div>
 				<p class="lead text-white">
 					Jean-François Milhaud, <br />
@@ -2604,7 +2642,7 @@
 				<h3 class="text-uppercase text-white mt-5">
 					KEY EVENTS DURING 2018
 				</h3>
-				<div class="card card-dashed mt-5 mb-5">
+				<div class="card card-dashed mt-5 mb-5 d-block px-3 pt-3 pb-3">
 					<img src="images/keyEvents.png" alt="Timeline from January to December with UPS key support events"
 						class="img-fluid">
 				</div>

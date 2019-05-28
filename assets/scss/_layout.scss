@@ -3,18 +3,20 @@ html {
 }
 
 .section {
-    background-size: cover;
+	background-size: cover;
+
 
     &-20 {
-        min-height: 20vh;
+		min-height: 20vh;
+		
     }
 
     &-50 {
-        min-height: 50vh;
+		min-height: 50vh;
     }
 
     &-100 {
-        min-height: 100vh;
+		min-height: 100vh;
     }
 }
 
@@ -26,6 +28,7 @@ html {
 }
 
 // Grids----------------------------------------
+
 /* autoprefixer grid: autoplace */
 
 .grid-2 {
@@ -46,11 +49,12 @@ html {
 }
 
 .figures {
-    @include media-breakpoint-up(md) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
-    }
+    // @include media-breakpoint-up(md) {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr 1fr;
+	// 	grid-template-rows: auto auto;
+	// 	grid-column-gap: $grid-gutter-width;
+    // }
 
     .grid-2 {
         display: grid;

@@ -6,20 +6,12 @@
 	align-items: flex-end;
 	z-index: 3;
 	position: relative;
+	
 
-	display: grid;
-	padding: $grid-gutter-width;
-	grid-column-gap: $grid-gutter-width;
+	// IE hack
+	height: 100px;
+	min-height: 100vh;
 
-	@include media-breakpoint-down(sm) {
-		grid-template-columns: 100px auto;
-	}
-
-	@include media-breakpoint-up(md) {
-		grid-template-columns: 100px auto max-content;
-		padding: $grid-gutter-width;
-		background-attachment: fixed;
-	}
 
     h1 {
         font-size: 3rem;
@@ -40,14 +32,13 @@
         padding-bottom: $grid-gutter-width;
 		width: 100px;
 		align-self: stretch;
-		-ms-grid-span: 2;
     }
 
     &-title {
         display: flex;
         align-items: flex-end;
         justify-content: flex-end;
-        color: $white;
+		color: $white;
     }
 }
 
@@ -58,7 +49,6 @@
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
-	-ms-grid-row: 2;
 
 	@include media-breakpoint-down(sm) {
 		display: none;

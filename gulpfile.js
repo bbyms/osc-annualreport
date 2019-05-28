@@ -41,7 +41,7 @@ var config = {
     gulp.task('sass', function () {
        return gulp.src('assets/scss/**/*.scss')
           .pipe(sass())
-          .pipe(postcss([ autoprefixer() ]))
+          .pipe(postcss([ autoprefixer({ grid: "autoplace" }) ]))
           .pipe(gulp.dest('./dist/css'))
           .pipe(browserSync.stream());
     });
