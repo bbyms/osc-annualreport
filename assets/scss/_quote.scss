@@ -35,7 +35,11 @@
 .stanley {
   background-image: url("/images/driver.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: left;
+
+  @include media-breakpoint-up(lg) {
+	background-position: center;
+  }
 }
 
 .alia {

@@ -107,7 +107,9 @@ html {
 	grid-template-rows: repeat(5, auto);
 	grid-column-gap: $grid-gutter-width;
 
-	padding: 3rem;
+	@include media-breakpoint-up(lg) {
+		padding: 3rem;
+	}
 
 	.lead {
 		margin-bottom: 0;
@@ -115,14 +117,15 @@ html {
 }
 
 .storage-grid {
-	@include media-breakpoint-up(md) {
-		display: grid;
+
+	display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(4, min-content) auto;
 		grid-column-gap: $grid-gutter-width;
-	}
 
-	padding: 3rem;
+	@include media-breakpoint-up(lg) {
+		padding: 3rem;
+	}
 
 	.lead {
 		margin-bottom: 0;

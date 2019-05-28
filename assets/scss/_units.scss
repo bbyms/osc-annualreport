@@ -11,15 +11,17 @@
 
 .goods-image {
     background-image: url('/images/goods.jpg');
-	background-position: center;
+	background-position: right;
 	@include media-breakpoint-up(md) {
 		background-attachment: fixed;
+		background-position: center;
 	}
 }
 
 .planning-image {
     background-image: url('/images/planning.jpg');
 	background-position: center;
+	background-size: cover;
 	
     @include media-breakpoint-up(md) {
 		background-attachment: fixed;
@@ -70,8 +72,11 @@
 }
 
 .map-image {
-    background-image: url('/images/map-figures.svg');
-    background-position: center;
+	
+	@include media-breakpoint-up(md) {
+		background-image: url('/images/map-figures.svg');
+		background-position: center;
+	}
 }
 
 @keyframes grow {
@@ -91,7 +96,7 @@
 	position: absolute;
 	bottom: 0;
 
-	@include media-breakpoint-up(md) {
+	@include media-breakpoint-up(lg) {
 		height: 250px;
 	}
 }
@@ -108,13 +113,13 @@
 }
 
 .cb01 {
-	@include media-breakpoint-up(md) {
+	@include media-breakpoint-up(lg) {
 		height: 330px;
 	}
 }
 
 .cb02 {
-	@include media-breakpoint-up(md) {
+	@include media-breakpoint-up(lg) {
 		height: 205px;
 	}
 }
