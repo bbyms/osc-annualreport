@@ -11,7 +11,18 @@
 
 .goods-image {
     background-image: url('/images/goods.jpg');
-	background-position: right;
+	background-position: 70%;
+
+	@include media-breakpoint-down(sm) {
+		display: flex;
+		align-items: flex-end;
+
+		.container {
+			margin-bottom: 40px;
+			text-align: right;
+		}
+	}
+
 	@include media-breakpoint-up(md) {
 		background-attachment: fixed;
 		background-position: center;
