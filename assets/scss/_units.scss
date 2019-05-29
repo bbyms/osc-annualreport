@@ -68,7 +68,11 @@
 
 .logistics-image {
     background-image: url('/images/logistics.jpg');
-    background-position: center;
+	background-position: -250px;
+	
+	@include media-breakpoint-up(md) {
+		background-position: center;
+	}
 }
 
 .map-image {
@@ -110,5 +114,11 @@
 .cb02 {
 	@include media-breakpoint-up(lg) {
 		height: 205px;
+	}
+}
+
+.padding-fix {
+	@include media-breakpoint-up(lg) {
+		padding-left: 2.5rem;
 	}
 }

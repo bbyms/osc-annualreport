@@ -16284,8 +16284,10 @@ html {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: (min-content)[4] auto;
       grid-template-rows: repeat(4, -webkit-min-content) auto;
-      grid-template-rows: repeat(4, min-content) auto;
-  grid-column-gap: 30px; }
+      grid-template-rows: repeat(4, min-content) auto; }
+  @media (min-width: 768px) {
+    .storage-grid {
+      grid-column-gap: 30px; } }
   @media (min-width: 992px) {
     .storage-grid {
       padding: 3rem; } }
@@ -16434,7 +16436,7 @@ h4 {
   border-bottom: 1px solid #fff; }
 
 .title {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 900;
   letter-spacing: 1rem; }
   @media (min-width: 768px) {
@@ -16607,9 +16609,6 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  @media (max-width: 767.98px) {
-    .btn-scroll {
-      display: none; } }
 
 .quote-content {
   background-color: rgba(0, 0, 0, 0.5);
@@ -16631,16 +16630,26 @@ h4 {
 .mechanic {
   background-image: url("/images/mechanic.jpg");
   background-size: cover;
-  background-position: right; }
+  background-position: 75%; }
+  @media (min-width: 768px) {
+    .mechanic {
+      background-position: rigth; } }
 
 .community {
   background-image: url("/images/community.jpg");
-  background-size: cover; }
+  background-size: cover;
+  background-position: right; }
+  @media (min-width: 768px) {
+    .community {
+      background-position: center; } }
 
 .stanley {
   background-image: url("/images/driver.jpg");
   background-size: cover;
-  background-position: left; }
+  background-position: center; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .stanley {
+      background-position: center; } }
   @media (min-width: 992px) {
     .stanley {
       background-position: center; } }
@@ -16648,7 +16657,10 @@ h4 {
 .alia {
   background-image: url("/images/alia.jpg");
   background-size: cover;
-  background-position: top; }
+  background-position: -260px 0; }
+  @media (min-width: 768px) {
+    .alia {
+      background-position: top; } }
 
 .donor {
   background-image: url("/images/donors.jpg");
@@ -16793,7 +16805,10 @@ h4 {
 
 .logistics-image {
   background-image: url("/images/logistics.jpg");
-  background-position: center; }
+  background-position: -250px; }
+  @media (min-width: 768px) {
+    .logistics-image {
+      background-position: center; } }
 
 @media (min-width: 768px) {
   .map-image {
@@ -16825,3 +16840,7 @@ h4 {
 @media (min-width: 992px) {
   .cb02 {
     height: 205px; } }
+
+@media (min-width: 992px) {
+  .padding-fix {
+    padding-left: 2.5rem; } }

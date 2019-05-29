@@ -121,7 +121,10 @@ html {
 	display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: repeat(4, min-content) auto;
-		grid-column-gap: $grid-gutter-width;
+	
+		@include media-breakpoint-up(md) {
+			grid-column-gap: $grid-gutter-width;
+		}
 
 	@include media-breakpoint-up(lg) {
 		padding: 3rem;
