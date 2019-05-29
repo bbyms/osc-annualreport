@@ -79,17 +79,6 @@
 	}
 }
 
-@keyframes grow {
-	0% {
-		transform: scaleY(0);
-		transform-origin: bottom left;
-	}
-
-	100% {
-		transform: scaleY(1);
-	}
-}
-
 .shipping-chart {
 	opacity: .5;
 	visibility: visible;

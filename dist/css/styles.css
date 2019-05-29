@@ -8094,11 +8094,6 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-@media all and (-ms-high-contrast: none) {
-  *::-ms-backdrop,
-  [data-aos^=fade][data-aos^=fade], [data-aos^=zoom][data-aos^=zoom] {
-    opacity: 1; } }
-
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -16804,26 +16799,6 @@ h4 {
   .map-image {
     background-image: url("/images/map-figures.svg");
     background-position: center; } }
-
-@-webkit-keyframes grow {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transform-origin: bottom left;
-            transform-origin: bottom left; }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1); } }
-
-@keyframes grow {
-  0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
-    -webkit-transform-origin: bottom left;
-            transform-origin: bottom left; }
-  100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1); } }
 
 .shipping-chart {
   opacity: .5;
