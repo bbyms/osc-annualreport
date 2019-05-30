@@ -2,7 +2,7 @@
 
 
 .foodProc-image {
-    background-image: url('/images/foodProc.jpg');
+    background-image: url('../images/foodProc.jpg');
     background-position: center;
     @include media-breakpoint-up(md) {
 		background-attachment: fixed;
@@ -10,7 +10,7 @@
 }
 
 .goods-image {
-    background-image: url('/images/goods.jpg');
+    background-image: url('../images/goods.jpg');
 	background-position: 70%;
 
 	@include media-breakpoint-down(sm) {
@@ -30,7 +30,7 @@
 }
 
 .planning-image {
-    background-image: url('/images/planning.jpg');
+    background-image: url('../images/planning.jpg');
 	background-position: center;
 	background-size: cover;
 	
@@ -40,12 +40,12 @@
 }
 
 .shipping-image {
-    background-image: url('/images/shipping.jpg');
+    background-image: url('../images/shipping.jpg');
     background-position: center;
 }
 
 .aviation-image {
-    background-image: url('/images/aviation.jpg');
+    background-image: url('../images/aviation.jpg');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -55,7 +55,7 @@
 }
 
 .cbt-image {
-    background-image: url('/images/cbt.jpg');
+    background-image: url('../images/cbt.jpg');
     background-position: top;
     @include media-breakpoint-up(md) {
 		background-attachment: fixed;
@@ -63,7 +63,7 @@
 }
 
 .bilateral-image {
-    background-image: url('/images/bilateral.jpg');
+    background-image: url('../images/bilateral.jpg');
     background-position: top left;
 	@include media-breakpoint-up(md) {
 		background-attachment: fixed;
@@ -72,13 +72,13 @@
 }
 
 .unhas-image {
-    background-image: url('/images/unhas.jpg');
+    background-image: url('../images/unhas.jpg');
     background-position: center;
     background-size: cover;
 }
 
 .logistics-image {
-    background-image: url('/images/logistics.jpg');
+    background-image: url('../images/logistics.jpg');
 	background-position: -250px;
 	
 	@include media-breakpoint-up(md) {
@@ -89,7 +89,7 @@
 .map-image {
 	
 	@include media-breakpoint-up(md) {
-		background-image: url('/images/map-figures.svg');
+		background-image: url('../images/map-figures.svg');
 		background-position: center;
 	}
 }

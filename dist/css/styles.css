@@ -16549,7 +16549,7 @@ h4 {
     font-size: 2.5rem; }
 
 .cover {
-  background-image: url("/images/cover.jpg");
+  background-image: url("../images/cover.jpg");
   background-position: bottom;
   background-color: #0A6EB4;
   -webkit-box-align: end;
@@ -16628,7 +16628,7 @@ h4 {
   text-transform: uppercase; }
 
 .mechanic {
-  background-image: url("/images/mechanic.jpg");
+  background-image: url("../images/mechanic.jpg");
   background-size: cover;
   background-position: 75%; }
   @media (min-width: 768px) {
@@ -16636,7 +16636,7 @@ h4 {
       background-position: rigth; } }
 
 .community {
-  background-image: url("/images/community.jpg");
+  background-image: url("../images/community.jpg");
   background-size: cover;
   background-position: right; }
   @media (min-width: 768px) {
@@ -16644,7 +16644,7 @@ h4 {
       background-position: center; } }
 
 .stanley {
-  background-image: url("/images/driver.jpg");
+  background-image: url("../images/driver.jpg");
   background-size: cover;
   background-position: center; }
   @media (min-width: 768px) and (max-width: 991.98px) {
@@ -16655,7 +16655,7 @@ h4 {
       background-position: center; } }
 
 .alia {
-  background-image: url("/images/alia.jpg");
+  background-image: url("../images/alia.jpg");
   background-size: cover;
   background-position: -260px 0; }
   @media (min-width: 768px) {
@@ -16663,7 +16663,7 @@ h4 {
       background-position: top; } }
 
 .donor {
-  background-image: url("/images/donors.jpg");
+  background-image: url("../images/donors.jpg");
   background-size: cover;
   background-position: center; }
   .donor h3 {
@@ -16674,7 +16674,7 @@ h4 {
       color: #fff; }
 
 .end {
-  background-image: url("/images/end.jpg");
+  background-image: url("../images/end.jpg");
   background-size: cover;
   background-position: center; }
   @media (min-width: 768px) {
@@ -16682,7 +16682,7 @@ h4 {
       background-attachment: fixed; } }
 
 .yemen {
-  background-image: url("/images/yemen.png");
+  background-image: url("../images/yemen.png");
   background-size: cover;
   background-position: top left; }
 
@@ -16690,7 +16690,7 @@ h4 {
   background-color: #39474f; }
 
 .trucks {
-  background-image: url("/images/trucks.jpg");
+  background-image: url("../images/trucks.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -16699,19 +16699,19 @@ h4 {
   border-top: 1px dashed #fff; }
 
 .innovation {
-  background-image: url("/images/innovationBg.jpg");
+  background-image: url("../images/innovationBg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
 
 .largeNews {
-  background-image: url("/images/largeNews.svg");
+  background-image: url("../images/largeNews.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center; }
 
 .sherp {
-  background-image: url("/images/sherp.png");
+  background-image: url("../images/sherp.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -16722,7 +16722,7 @@ h4 {
   line-height: normal; }
 
 .postcard {
-  background-image: url("/images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -16732,30 +16732,30 @@ h4 {
       background-attachment: fixed; } }
 
 #postcard01 {
-  background-image: url("/images/postcards/background01.png"); }
+  background-image: url("../images/postcards/background01.png"); }
 
 #postcard02 {
-  background-image: url("/images/postcards/background02.png"); }
+  background-image: url("../images/postcards/background02.png"); }
 
 #postcard03 {
-  background-image: url("/images/postcards/background03.png"); }
+  background-image: url("../images/postcards/background03.png"); }
 
 #postcard04 {
-  background-image: url("/images/postcards/background04.png"); }
+  background-image: url("../images/postcards/background04.png"); }
 
 @media (min-width: 768px) {
   .elements-img {
     height: 100% !important; } }
 
 .foodProc-image {
-  background-image: url("/images/foodProc.jpg");
+  background-image: url("../images/foodProc.jpg");
   background-position: center; }
   @media (min-width: 768px) {
     .foodProc-image {
       background-attachment: fixed; } }
 
 .goods-image {
-  background-image: url("/images/goods.jpg");
+  background-image: url("../images/goods.jpg");
   background-position: 70%; }
   @media (max-width: 767.98px) {
     .goods-image {
@@ -16774,7 +16774,7 @@ h4 {
       background-position: center; } }
 
 .planning-image {
-  background-image: url("/images/planning.jpg");
+  background-image: url("../images/planning.jpg");
   background-position: center;
   background-size: cover; }
   @media (min-width: 768px) {
@@ -16782,11 +16782,11 @@ h4 {
       background-attachment: fixed; } }
 
 .shipping-image {
-  background-image: url("/images/shipping.jpg");
+  background-image: url("../images/shipping.jpg");
   background-position: center; }
 
 .aviation-image {
-  background-image: url("/images/aviation.jpg");
+  background-image: url("../images/aviation.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -16795,14 +16795,14 @@ h4 {
       background-attachment: fixed; } }
 
 .cbt-image {
-  background-image: url("/images/cbt.jpg");
+  background-image: url("../images/cbt.jpg");
   background-position: top; }
   @media (min-width: 768px) {
     .cbt-image {
       background-attachment: fixed; } }
 
 .bilateral-image {
-  background-image: url("/images/bilateral.jpg");
+  background-image: url("../images/bilateral.jpg");
   background-position: top left;
   background-size: cover; }
   @media (min-width: 768px) {
@@ -16810,12 +16810,12 @@ h4 {
       background-attachment: fixed; } }
 
 .unhas-image {
-  background-image: url("/images/unhas.jpg");
+  background-image: url("../images/unhas.jpg");
   background-position: center;
   background-size: cover; }
 
 .logistics-image {
-  background-image: url("/images/logistics.jpg");
+  background-image: url("../images/logistics.jpg");
   background-position: -250px; }
   @media (min-width: 768px) {
     .logistics-image {
@@ -16823,7 +16823,7 @@ h4 {
 
 @media (min-width: 768px) {
   .map-image {
-    background-image: url("/images/map-figures.svg");
+    background-image: url("../images/map-figures.svg");
     background-position: center; } }
 
 .shipping-chart {
